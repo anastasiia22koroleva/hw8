@@ -1,0 +1,1227 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="2365" font-family="Verdana, sans-serif" font-size="11">
+<rect width="100%" height="100%" fill="#f8f8f4"/>
+<text x="700.0" y="22" text-anchor="middle" font-size="16">CPU: GET /api/messages/optimized - 15000 запросов</text>
+<text x="700.0" y="42" text-anchor="middle" fill="#555">JFR jdk.ExecutionSample, потоки http-nio, сэмплов: 195. Синий - код приложения, красный - инициализация прокси Hibernate, оранжевый - Hibernate, фиолетовый - H2, зелёный - Spring / Jackson</text>
+<g><title>all - 195 сэмплов (100.0%)</title><rect x="10.00" y="2338" width="1380.00" height="16" fill="rgb(218,218,190)" rx="1"/>
+<text x="13.00" y="2350">all</text>
+</g>
+<g><title>java.lang.Thread.run - 195 сэмплов (100.0%)</title><rect x="10.00" y="2321" width="1380.00" height="16" fill="rgb(212,212,190)" rx="1"/>
+<text x="13.00" y="2333">j.l.Thread.run</text>
+</g>
+<g><title>java.lang.Thread.runWith - 195 сэмплов (100.0%)</title><rect x="10.00" y="2304" width="1380.00" height="16" fill="rgb(216,216,190)" rx="1"/>
+<text x="13.00" y="2316">j.l.Thread.runWith</text>
+</g>
+<g><title>org.apache.tomcat.util.net.NioEndpoint$Poller.run - 3 сэмплов (1.5%)</title><rect x="10.00" y="2287" width="21.23" height="16" fill="rgb(200,200,190)" rx="1"/>
+</g>
+<g><title>sun.nio.ch.SelectorImpl.select - 3 сэмплов (1.5%)</title><rect x="10.00" y="2270" width="21.23" height="16" fill="rgb(207,207,190)" rx="1"/>
+</g>
+<g><title>sun.nio.ch.SelectorImpl.lockAndDoSelect - 3 сэмплов (1.5%)</title><rect x="10.00" y="2253" width="21.23" height="16" fill="rgb(206,206,190)" rx="1"/>
+</g>
+<g><title>sun.nio.ch.KQueueSelectorImpl.doSelect - 3 сэмплов (1.5%)</title><rect x="10.00" y="2236" width="21.23" height="16" fill="rgb(214,214,190)" rx="1"/>
+</g>
+<g><title>sun.nio.ch.KQueueSelectorImpl.processUpdateQueue - 1 сэмплов (0.5%)</title><rect x="10.00" y="2219" width="7.08" height="16" fill="rgb(218,218,190)" rx="1"/>
+</g>
+<g><title>sun.nio.ch.SelectorImpl.end - 1 сэмплов (0.5%)</title><rect x="17.08" y="2219" width="7.08" height="16" fill="rgb(211,211,190)" rx="1"/>
+</g>
+<g><title>java.nio.channels.spi.AbstractSelector.end - 1 сэмплов (0.5%)</title><rect x="17.08" y="2202" width="7.08" height="16" fill="rgb(219,219,190)" rx="1"/>
+</g>
+<g><title>java.nio.channels.spi.AbstractInterruptibleChannel.blockedOn - 1 сэмплов (0.5%)</title><rect x="17.08" y="2185" width="7.08" height="16" fill="rgb(209,209,190)" rx="1"/>
+</g>
+<g><title>java.lang.System$2.blockedOn - 1 сэмплов (0.5%)</title><rect x="17.08" y="2168" width="7.08" height="16" fill="rgb(209,209,190)" rx="1"/>
+</g>
+<g><title>sun.nio.ch.SelectorImpl.processDeregisterQueue - 1 сэмплов (0.5%)</title><rect x="24.15" y="2219" width="7.08" height="16" fill="rgb(208,208,190)" rx="1"/>
+</g>
+<g><title>java.util.ArrayDeque.pollFirst - 1 сэмплов (0.5%)</title><rect x="24.15" y="2202" width="7.08" height="16" fill="rgb(214,214,190)" rx="1"/>
+</g>
+<g><title>java.util.ArrayDeque.elementAt - 1 сэмплов (0.5%)</title><rect x="24.15" y="2185" width="7.08" height="16" fill="rgb(208,208,190)" rx="1"/>
+</g>
+<g><title>org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run - 192 сэмплов (98.5%)</title><rect x="31.23" y="2287" width="1358.77" height="16" fill="rgb(217,217,190)" rx="1"/>
+<text x="34.23" y="2299">o.a.t.u.t.TaskThread$WrappingRunnable.run</text>
+</g>
+<g><title>org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run - 192 сэмплов (98.5%)</title><rect x="31.23" y="2270" width="1358.77" height="16" fill="rgb(219,219,190)" rx="1"/>
+<text x="34.23" y="2282">o.a.t.u.t.ThreadPoolExecutor$Worker.run</text>
+</g>
+<g><title>org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker - 192 сэмплов (98.5%)</title><rect x="31.23" y="2253" width="1358.77" height="16" fill="rgb(206,206,190)" rx="1"/>
+<text x="34.23" y="2265">o.a.t.u.t.ThreadPoolExecutor.runWorker</text>
+</g>
+<g><title>org.apache.tomcat.util.net.SocketProcessorBase.run - 192 сэмплов (98.5%)</title><rect x="31.23" y="2236" width="1358.77" height="16" fill="rgb(201,201,190)" rx="1"/>
+<text x="34.23" y="2248">o.a.t.u.n.SocketProcessorBase.run</text>
+</g>
+<g><title>org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun - 192 сэмплов (98.5%)</title><rect x="31.23" y="2219" width="1358.77" height="16" fill="rgb(219,219,190)" rx="1"/>
+<text x="34.23" y="2231">o.a.t.u.n.NioEndpoint$SocketProcessor.doRun</text>
+</g>
+<g><title>org.apache.coyote.AbstractProtocol$ConnectionHandler.process - 192 сэмплов (98.5%)</title><rect x="31.23" y="2202" width="1358.77" height="16" fill="rgb(214,214,190)" rx="1"/>
+<text x="34.23" y="2214">o.a.c.AbstractProtocol$ConnectionHandler.process</text>
+</g>
+<g><title>org.apache.coyote.AbstractProcessorLight.process - 191 сэмплов (97.9%)</title><rect x="31.23" y="2185" width="1351.69" height="16" fill="rgb(213,213,190)" rx="1"/>
+<text x="34.23" y="2197">o.a.c.AbstractProcessorLight.process</text>
+</g>
+<g><title>org.apache.coyote.http11.Http11Processor.service - 191 сэмплов (97.9%)</title><rect x="31.23" y="2168" width="1351.69" height="16" fill="rgb(206,206,190)" rx="1"/>
+<text x="34.23" y="2180">o.a.c.h.Http11Processor.service</text>
+</g>
+<g><title>org.apache.catalina.connector.CoyoteAdapter.service - 191 сэмплов (97.9%)</title><rect x="31.23" y="2151" width="1351.69" height="16" fill="rgb(207,207,190)" rx="1"/>
+<text x="34.23" y="2163">o.a.c.c.CoyoteAdapter.service</text>
+</g>
+<g><title>org.apache.catalina.connector.CoyoteAdapter.postParseRequest - 2 сэмплов (1.0%)</title><rect x="31.23" y="2134" width="14.15" height="16" fill="rgb(208,208,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.connector.CoyoteAdapter.convertURI - 1 сэмплов (0.5%)</title><rect x="31.23" y="2117" width="7.08" height="16" fill="rgb(214,214,190)" rx="1"/>
+</g>
+<g><title>org.apache.tomcat.util.buf.B2CConverter.convert - 1 сэмплов (0.5%)</title><rect x="31.23" y="2100" width="7.08" height="16" fill="rgb(202,202,190)" rx="1"/>
+</g>
+<g><title>java.nio.charset.CharsetDecoder.decode - 1 сэмплов (0.5%)</title><rect x="31.23" y="2083" width="7.08" height="16" fill="rgb(204,204,190)" rx="1"/>
+</g>
+<g><title>sun.nio.cs.UTF_8$Decoder.decodeLoop - 1 сэмплов (0.5%)</title><rect x="31.23" y="2066" width="7.08" height="16" fill="rgb(216,216,190)" rx="1"/>
+</g>
+<g><title>sun.nio.cs.UTF_8$Decoder.decodeArrayLoop - 1 сэмплов (0.5%)</title><rect x="31.23" y="2049" width="7.08" height="16" fill="rgb(202,202,190)" rx="1"/>
+</g>
+<g><title>java.lang.System$2.decodeASCII - 1 сэмплов (0.5%)</title><rect x="31.23" y="2032" width="7.08" height="16" fill="rgb(218,218,190)" rx="1"/>
+</g>
+<g><title>java.lang.String.decodeASCII - 1 сэмплов (0.5%)</title><rect x="31.23" y="2015" width="7.08" height="16" fill="rgb(203,203,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.mapper.Mapper.map - 1 сэмплов (0.5%)</title><rect x="38.31" y="2117" width="7.08" height="16" fill="rgb(208,208,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.mapper.Mapper.internalMap - 1 сэмплов (0.5%)</title><rect x="38.31" y="2100" width="7.08" height="16" fill="rgb(203,203,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.mapper.Mapper.internalMapWrapper - 1 сэмплов (0.5%)</title><rect x="38.31" y="2083" width="7.08" height="16" fill="rgb(201,201,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.mapper.Mapper.internalMapWildcardWrapper - 1 сэмплов (0.5%)</title><rect x="38.31" y="2066" width="7.08" height="16" fill="rgb(218,218,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.core.StandardEngineValve.invoke - 189 сэмплов (96.9%)</title><rect x="45.38" y="2134" width="1337.54" height="16" fill="rgb(219,219,190)" rx="1"/>
+<text x="48.38" y="2146">o.a.c.c.StandardEngineValve.invoke</text>
+</g>
+<g><title>org.apache.catalina.valves.ErrorReportValve.invoke - 188 сэмплов (96.4%)</title><rect x="45.38" y="2117" width="1330.46" height="16" fill="rgb(202,202,190)" rx="1"/>
+<text x="48.38" y="2129">o.a.c.v.ErrorReportValve.invoke</text>
+</g>
+<g><title>org.apache.catalina.core.StandardHostValve.invoke - 188 сэмплов (96.4%)</title><rect x="45.38" y="2100" width="1330.46" height="16" fill="rgb(204,204,190)" rx="1"/>
+<text x="48.38" y="2112">o.a.c.c.StandardHostValve.invoke</text>
+</g>
+<g><title>org.apache.catalina.authenticator.AuthenticatorBase.invoke - 187 сэмплов (95.9%)</title><rect x="45.38" y="2083" width="1323.38" height="16" fill="rgb(200,200,190)" rx="1"/>
+<text x="48.38" y="2095">o.a.c.a.AuthenticatorBase.invoke</text>
+</g>
+<g><title>org.apache.catalina.core.StandardContextValve.invoke - 187 сэмплов (95.9%)</title><rect x="45.38" y="2066" width="1323.38" height="16" fill="rgb(214,214,190)" rx="1"/>
+<text x="48.38" y="2078">o.a.c.c.StandardContextValve.invoke</text>
+</g>
+<g><title>org.apache.catalina.core.StandardWrapperValve.invoke - 187 сэмплов (95.9%)</title><rect x="45.38" y="2049" width="1323.38" height="16" fill="rgb(209,209,190)" rx="1"/>
+<text x="48.38" y="2061">o.a.c.c.StandardWrapperValve.invoke</text>
+</g>
+<g><title>java.util.concurrent.atomic.LongAdder.add - 1 сэмплов (0.5%)</title><rect x="45.38" y="2032" width="7.08" height="16" fill="rgb(215,215,190)" rx="1"/>
+</g>
+<g><title>java.util.concurrent.atomic.Striped64.longAccumulate - 1 сэмплов (0.5%)</title><rect x="45.38" y="2015" width="7.08" height="16" fill="rgb(213,213,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.core.ApplicationFilterChain.doFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="2032" width="1302.15" height="16" fill="rgb(203,203,190)" rx="1"/>
+<text x="55.46" y="2044">o.a.c.c.ApplicationFilterChain.doFilter</text>
+</g>
+<g><title>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="2015" width="1302.15" height="16" fill="rgb(216,216,190)" rx="1"/>
+<text x="55.46" y="2027">o.a.c.c.ApplicationFilterChain.internalDoFilter</text>
+</g>
+<g><title>org.springframework.web.filter.OncePerRequestFilter.doFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="1998" width="1302.15" height="16" fill="rgb(156,200,80)" rx="1"/>
+<text x="55.46" y="2010">o.s.w.f.OncePerRequestFilter.doFilter</text>
+</g>
+<g><title>org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal - 184 сэмплов (94.4%)</title><rect x="52.46" y="1981" width="1302.15" height="16" fill="rgb(145,200,80)" rx="1"/>
+<text x="55.46" y="1993">o.s.w.f.CharacterEncodingFilter.doFilterInternal</text>
+</g>
+<g><title>org.apache.catalina.core.ApplicationFilterChain.doFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="1964" width="1302.15" height="16" fill="rgb(203,203,190)" rx="1"/>
+<text x="55.46" y="1976">o.a.c.c.ApplicationFilterChain.doFilter</text>
+</g>
+<g><title>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="1947" width="1302.15" height="16" fill="rgb(216,216,190)" rx="1"/>
+<text x="55.46" y="1959">o.a.c.c.ApplicationFilterChain.internalDoFilter</text>
+</g>
+<g><title>org.springframework.web.filter.OncePerRequestFilter.doFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="1930" width="1302.15" height="16" fill="rgb(156,200,80)" rx="1"/>
+<text x="55.46" y="1942">o.s.w.f.OncePerRequestFilter.doFilter</text>
+</g>
+<g><title>org.springframework.web.filter.FormContentFilter.doFilterInternal - 184 сэмплов (94.4%)</title><rect x="52.46" y="1913" width="1302.15" height="16" fill="rgb(141,200,80)" rx="1"/>
+<text x="55.46" y="1925">o.s.w.f.FormContentFilter.doFilterInternal</text>
+</g>
+<g><title>org.apache.catalina.core.ApplicationFilterChain.doFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="1896" width="1302.15" height="16" fill="rgb(203,203,190)" rx="1"/>
+<text x="55.46" y="1908">o.a.c.c.ApplicationFilterChain.doFilter</text>
+</g>
+<g><title>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="1879" width="1302.15" height="16" fill="rgb(216,216,190)" rx="1"/>
+<text x="55.46" y="1891">o.a.c.c.ApplicationFilterChain.internalDoFilter</text>
+</g>
+<g><title>org.springframework.web.filter.OncePerRequestFilter.doFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="1862" width="1302.15" height="16" fill="rgb(156,200,80)" rx="1"/>
+<text x="55.46" y="1874">o.s.w.f.OncePerRequestFilter.doFilter</text>
+</g>
+<g><title>org.springframework.web.filter.RequestContextFilter.doFilterInternal - 184 сэмплов (94.4%)</title><rect x="52.46" y="1845" width="1302.15" height="16" fill="rgb(120,200,80)" rx="1"/>
+<text x="55.46" y="1857">o.s.w.f.RequestContextFilter.doFilterInternal</text>
+</g>
+<g><title>org.apache.catalina.core.ApplicationFilterChain.doFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="1828" width="1302.15" height="16" fill="rgb(203,203,190)" rx="1"/>
+<text x="55.46" y="1840">o.a.c.c.ApplicationFilterChain.doFilter</text>
+</g>
+<g><title>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="1811" width="1302.15" height="16" fill="rgb(216,216,190)" rx="1"/>
+<text x="55.46" y="1823">o.a.c.c.ApplicationFilterChain.internalDoFilter</text>
+</g>
+<g><title>org.apache.tomcat.websocket.server.WsFilter.doFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="1794" width="1302.15" height="16" fill="rgb(210,210,190)" rx="1"/>
+<text x="55.46" y="1806">o.a.t.w.s.WsFilter.doFilter</text>
+</g>
+<g><title>org.apache.catalina.core.ApplicationFilterChain.doFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="1777" width="1302.15" height="16" fill="rgb(203,203,190)" rx="1"/>
+<text x="55.46" y="1789">o.a.c.c.ApplicationFilterChain.doFilter</text>
+</g>
+<g><title>org.apache.catalina.core.ApplicationFilterChain.internalDoFilter - 184 сэмплов (94.4%)</title><rect x="52.46" y="1760" width="1302.15" height="16" fill="rgb(216,216,190)" rx="1"/>
+<text x="55.46" y="1772">o.a.c.c.ApplicationFilterChain.internalDoFilter</text>
+</g>
+<g><title>jakarta.servlet.http.HttpServlet.service - 184 сэмплов (94.4%)</title><rect x="52.46" y="1743" width="1302.15" height="16" fill="rgb(219,219,190)" rx="1"/>
+<text x="55.46" y="1755">j.s.h.HttpServlet.service</text>
+</g>
+<g><title>org.springframework.web.servlet.FrameworkServlet.service - 184 сэмплов (94.4%)</title><rect x="52.46" y="1726" width="1302.15" height="16" fill="rgb(137,200,80)" rx="1"/>
+<text x="55.46" y="1738">o.s.w.s.FrameworkServlet.service</text>
+</g>
+<g><title>jakarta.servlet.http.HttpServlet.service - 184 сэмплов (94.4%)</title><rect x="52.46" y="1709" width="1302.15" height="16" fill="rgb(219,219,190)" rx="1"/>
+<text x="55.46" y="1721">j.s.h.HttpServlet.service</text>
+</g>
+<g><title>org.springframework.web.servlet.FrameworkServlet.doGet - 184 сэмплов (94.4%)</title><rect x="52.46" y="1692" width="1302.15" height="16" fill="rgb(128,200,80)" rx="1"/>
+<text x="55.46" y="1704">o.s.w.s.FrameworkServlet.doGet</text>
+</g>
+<g><title>org.springframework.web.servlet.FrameworkServlet.processRequest - 184 сэмплов (94.4%)</title><rect x="52.46" y="1675" width="1302.15" height="16" fill="rgb(136,200,80)" rx="1"/>
+<text x="55.46" y="1687">o.s.w.s.FrameworkServlet.processRequest</text>
+</g>
+<g><title>org.springframework.web.servlet.DispatcherServlet.doService - 182 сэмплов (93.3%)</title><rect x="52.46" y="1658" width="1288.00" height="16" fill="rgb(138,200,80)" rx="1"/>
+<text x="55.46" y="1670">o.s.w.s.DispatcherServlet.doService</text>
+</g>
+<g><title>org.springframework.web.servlet.DispatcherServlet.doDispatch - 182 сэмплов (93.3%)</title><rect x="52.46" y="1641" width="1288.00" height="16" fill="rgb(122,200,80)" rx="1"/>
+<text x="55.46" y="1653">o.s.w.s.DispatcherServlet.doDispatch</text>
+</g>
+<g><title>org.springframework.web.servlet.DispatcherServlet.getHandler - 3 сэмплов (1.5%)</title><rect x="52.46" y="1624" width="21.23" height="16" fill="rgb(151,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler - 3 сэмплов (1.5%)</title><rect x="52.46" y="1607" width="21.23" height="16" fill="rgb(136,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandlerExecutionChain - 1 сэмплов (0.5%)</title><rect x="52.46" y="1590" width="7.08" height="16" fill="rgb(143,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.HandlerExecutionChain.&lt;init&gt; - 1 сэмплов (0.5%)</title><rect x="52.46" y="1573" width="7.08" height="16" fill="rgb(122,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.HandlerExecutionChain.&lt;init&gt; - 1 сэмплов (0.5%)</title><rect x="52.46" y="1556" width="7.08" height="16" fill="rgb(122,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal - 2 сэмплов (1.0%)</title><rect x="59.54" y="1590" width="14.15" height="16" fill="rgb(140,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal - 2 сэмплов (1.0%)</title><rect x="59.54" y="1573" width="14.15" height="16" fill="rgb(140,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal - 2 сэмплов (1.0%)</title><rect x="59.54" y="1556" width="14.15" height="16" fill="rgb(132,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.handler.AbstractHandlerMapping.initLookupPath - 1 сэмплов (0.5%)</title><rect x="59.54" y="1539" width="7.08" height="16" fill="rgb(143,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.handler.AbstractHandlerMapping.getRequestPath - 1 сэмплов (0.5%)</title><rect x="59.54" y="1522" width="7.08" height="16" fill="rgb(136,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.util.ServletRequestPathUtils.parseAndCache - 1 сэмплов (0.5%)</title><rect x="59.54" y="1505" width="7.08" height="16" fill="rgb(159,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod - 1 сэмплов (0.5%)</title><rect x="66.62" y="1539" width="7.08" height="16" fill="rgb(141,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.addMatchingMappings - 1 сэмплов (0.5%)</title><rect x="66.62" y="1522" width="7.08" height="16" fill="rgb(150,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getMatchingMapping - 1 сэмплов (0.5%)</title><rect x="66.62" y="1505" width="7.08" height="16" fill="rgb(147,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getMatchingMapping - 1 сэмплов (0.5%)</title><rect x="66.62" y="1488" width="7.08" height="16" fill="rgb(147,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.mvc.method.RequestMappingInfo.getMatchingCondition - 1 сэмплов (0.5%)</title><rect x="66.62" y="1471" width="7.08" height="16" fill="rgb(141,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.mvc.condition.PathPatternsRequestCondition.getMatchingCondition - 1 сэмплов (0.5%)</title><rect x="66.62" y="1454" width="7.08" height="16" fill="rgb(155,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.mvc.condition.PathPatternsRequestCondition.getMatchingPatterns - 1 сэмплов (0.5%)</title><rect x="66.62" y="1437" width="7.08" height="16" fill="rgb(149,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.util.pattern.PathPattern.matches - 1 сэмплов (0.5%)</title><rect x="66.62" y="1420" width="7.08" height="16" fill="rgb(133,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.util.pattern.SeparatorPathElement.matches - 1 сэмплов (0.5%)</title><rect x="66.62" y="1403" width="7.08" height="16" fill="rgb(145,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.util.pattern.LiteralPathElement.matches - 1 сэмплов (0.5%)</title><rect x="66.62" y="1386" width="7.08" height="16" fill="rgb(154,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.util.pattern.SeparatorPathElement.matches - 1 сэмплов (0.5%)</title><rect x="66.62" y="1369" width="7.08" height="16" fill="rgb(145,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.util.pattern.LiteralPathElement.matches - 1 сэмплов (0.5%)</title><rect x="66.62" y="1352" width="7.08" height="16" fill="rgb(154,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.util.pattern.SeparatorPathElement.matches - 1 сэмплов (0.5%)</title><rect x="66.62" y="1335" width="7.08" height="16" fill="rgb(145,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.util.pattern.LiteralPathElement.matches - 1 сэмплов (0.5%)</title><rect x="66.62" y="1318" width="7.08" height="16" fill="rgb(154,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle - 179 сэмплов (91.8%)</title><rect x="73.69" y="1624" width="1266.77" height="16" fill="rgb(121,200,80)" rx="1"/>
+<text x="76.69" y="1636">o.s.w.s.m.m.AbstractHandlerMethodAdapter.handle</text>
+</g>
+<g><title>org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal - 179 сэмплов (91.8%)</title><rect x="73.69" y="1607" width="1266.77" height="16" fill="rgb(150,200,80)" rx="1"/>
+<text x="76.69" y="1619">o.s.w.s.m.m.a.RequestMappingHandlerAdapter.handleInternal</text>
+</g>
+<g><title>org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod - 179 сэмплов (91.8%)</title><rect x="73.69" y="1590" width="1266.77" height="16" fill="rgb(130,200,80)" rx="1"/>
+<text x="76.69" y="1602">o.s.w.s.m.m.a.RequestMappingHandlerAdapter.invokeHandlerMethod</text>
+</g>
+<g><title>org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle - 179 сэмплов (91.8%)</title><rect x="73.69" y="1573" width="1266.77" height="16" fill="rgb(154,200,80)" rx="1"/>
+<text x="76.69" y="1585">o.s.w.s.m.m.a.ServletInvocableHandlerMethod.invokeAndHandle</text>
+</g>
+<g><title>org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue - 41 сэмплов (21.0%)</title><rect x="73.69" y="1556" width="290.15" height="16" fill="rgb(149,200,80)" rx="1"/>
+<text x="76.69" y="1568">o.s.w.m.s.HandlerMethodReturnValueHandlerC..</text>
+</g>
+<g><title>org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue - 41 сэмплов (21.0%)</title><rect x="73.69" y="1539" width="290.15" height="16" fill="rgb(134,200,80)" rx="1"/>
+<text x="76.69" y="1551">o.s.w.s.m.m.a.RequestResponseBodyMethodPro..</text>
+</g>
+<g><title>org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters - 41 сэмплов (21.0%)</title><rect x="73.69" y="1522" width="290.15" height="16" fill="rgb(130,200,80)" rx="1"/>
+<text x="76.69" y="1534">o.s.w.s.m.m.a.AbstractMessageConverterMeth..</text>
+</g>
+<g><title>org.springframework.http.MediaType.removeQualityValue - 1 сэмплов (0.5%)</title><rect x="73.69" y="1505" width="7.08" height="16" fill="rgb(151,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.http.converter.AbstractGenericHttpMessageConverter.write - 38 сэмплов (19.5%)</title><rect x="80.77" y="1505" width="268.92" height="16" fill="rgb(147,200,80)" rx="1"/>
+<text x="83.77" y="1517">o.s.h.c.AbstractGenericHttpMessageConv..</text>
+</g>
+<g><title>org.springframework.http.converter.AbstractHttpMessageConverter.addDefaultHeaders - 1 сэмплов (0.5%)</title><rect x="80.77" y="1488" width="7.08" height="16" fill="rgb(128,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.http.HttpHeaders.getContentLength - 1 сэмплов (0.5%)</title><rect x="80.77" y="1471" width="7.08" height="16" fill="rgb(149,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.http.server.ServletServerHttpResponse$ServletResponseHttpHeaders.getFirst - 1 сэмплов (0.5%)</title><rect x="80.77" y="1454" width="7.08" height="16" fill="rgb(120,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.http.HttpHeaders.getFirst - 1 сэмплов (0.5%)</title><rect x="80.77" y="1437" width="7.08" height="16" fill="rgb(143,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.util.MultiValueMapAdapter.getFirst - 1 сэмплов (0.5%)</title><rect x="80.77" y="1420" width="7.08" height="16" fill="rgb(156,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.util.LinkedCaseInsensitiveMap.get - 1 сэмплов (0.5%)</title><rect x="80.77" y="1403" width="7.08" height="16" fill="rgb(128,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.util.LinkedCaseInsensitiveMap.convertKey - 1 сэмплов (0.5%)</title><rect x="80.77" y="1386" width="7.08" height="16" fill="rgb(159,200,80)" rx="1"/>
+</g>
+<g><title>java.lang.String.toLowerCase - 1 сэмплов (0.5%)</title><rect x="80.77" y="1369" width="7.08" height="16" fill="rgb(212,212,190)" rx="1"/>
+</g>
+<g><title>java.lang.StringLatin1.toLowerCase - 1 сэмплов (0.5%)</title><rect x="80.77" y="1352" width="7.08" height="16" fill="rgb(206,206,190)" rx="1"/>
+</g>
+<g><title>org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.writeInternal - 37 сэмплов (19.0%)</title><rect x="87.85" y="1488" width="261.85" height="16" fill="rgb(150,200,80)" rx="1"/>
+<text x="90.85" y="1500">o.s.h.c.j.AbstractJackson2HttpMessage..</text>
+</g>
+<g><title>com.fasterxml.jackson.databind.ObjectWriter.writeValue - 37 сэмплов (19.0%)</title><rect x="87.85" y="1471" width="261.85" height="16" fill="rgb(90,195,140)" rx="1"/>
+<text x="90.85" y="1483">c.f.j.d.ObjectWriter.writeValue</text>
+</g>
+<g><title>com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize - 37 сэмплов (19.0%)</title><rect x="87.85" y="1454" width="261.85" height="16" fill="rgb(90,209,140)" rx="1"/>
+<text x="90.85" y="1466">c.f.j.d.ObjectWriter$Prefetch.serialize</text>
+</g>
+<g><title>com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue - 37 сэмплов (19.0%)</title><rect x="87.85" y="1437" width="261.85" height="16" fill="rgb(90,205,140)" rx="1"/>
+<text x="90.85" y="1449">c.f.j.d.s.DefaultSerializerProvider.s..</text>
+</g>
+<g><title>com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize - 37 сэмплов (19.0%)</title><rect x="87.85" y="1420" width="261.85" height="16" fill="rgb(90,193,140)" rx="1"/>
+<text x="90.85" y="1432">c.f.j.d.s.DefaultSerializerProvider._..</text>
+</g>
+<g><title>com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serialize - 37 сэмплов (19.0%)</title><rect x="87.85" y="1403" width="261.85" height="16" fill="rgb(90,193,140)" rx="1"/>
+<text x="90.85" y="1415">c.f.j.d.s.s.CollectionSerializer.seri..</text>
+</g>
+<g><title>com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serialize - 37 сэмплов (19.0%)</title><rect x="87.85" y="1386" width="261.85" height="16" fill="rgb(90,193,140)" rx="1"/>
+<text x="90.85" y="1398">c.f.j.d.s.s.CollectionSerializer.seri..</text>
+</g>
+<g><title>com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serializeContents - 37 сэмплов (19.0%)</title><rect x="87.85" y="1369" width="261.85" height="16" fill="rgb(90,209,140)" rx="1"/>
+<text x="90.85" y="1381">c.f.j.d.s.s.CollectionSerializer.seri..</text>
+</g>
+<g><title>com.fasterxml.jackson.databind.ser.std.CollectionSerializer.serializeContentsUsing - 37 сэмплов (19.0%)</title><rect x="87.85" y="1352" width="261.85" height="16" fill="rgb(90,197,140)" rx="1"/>
+<text x="90.85" y="1364">c.f.j.d.s.s.CollectionSerializer.seri..</text>
+</g>
+<g><title>com.fasterxml.jackson.databind.ser.BeanSerializer.serialize - 36 сэмплов (18.5%)</title><rect x="87.85" y="1335" width="254.77" height="16" fill="rgb(90,209,140)" rx="1"/>
+<text x="90.85" y="1347">c.f.j.d.s.BeanSerializer.serialize</text>
+</g>
+<g><title>com.fasterxml.jackson.databind.ser.std.BeanSerializerBase.serializeFields - 36 сэмплов (18.5%)</title><rect x="87.85" y="1318" width="254.77" height="16" fill="rgb(90,209,140)" rx="1"/>
+<text x="90.85" y="1330">c.f.j.d.s.s.BeanSerializerBase.seria..</text>
+</g>
+<g><title>com.fasterxml.jackson.databind.ser.BeanPropertyWriter.serializeAsField - 35 сэмплов (17.9%)</title><rect x="87.85" y="1301" width="247.69" height="16" fill="rgb(90,195,140)" rx="1"/>
+<text x="90.85" y="1313">c.f.j.d.s.BeanPropertyWriter.serial..</text>
+</g>
+<g><title>com.fasterxml.jackson.databind.ser.std.StringSerializer.serialize - 11 сэмплов (5.6%)</title><rect x="87.85" y="1284" width="77.85" height="16" fill="rgb(90,208,140)" rx="1"/>
+<text x="90.85" y="1296">c.f.j.d.s..</text>
+</g>
+<g><title>com.fasterxml.jackson.core.json.UTF8JsonGenerator.writeString - 11 сэмплов (5.6%)</title><rect x="87.85" y="1267" width="77.85" height="16" fill="rgb(90,194,140)" rx="1"/>
+<text x="90.85" y="1279">c.f.j.c.j..</text>
+</g>
+<g><title>com.fasterxml.jackson.core.json.UTF8JsonGenerator._writeStringSegment - 10 сэмплов (5.1%)</title><rect x="87.85" y="1250" width="70.77" height="16" fill="rgb(90,205,140)" rx="1"/>
+<text x="90.85" y="1262">c.f.j.c...</text>
+</g>
+<g><title>com.fasterxml.jackson.core.json.UTF8JsonGenerator._writeStringSegment2 - 7 сэмплов (3.6%)</title><rect x="87.85" y="1233" width="49.54" height="16" fill="rgb(90,194,140)" rx="1"/>
+<text x="90.85" y="1245">c.f.j..</text>
+</g>
+<g><title>com.fasterxml.jackson.core.json.UTF8JsonGenerator._flushBuffer - 1 сэмплов (0.5%)</title><rect x="87.85" y="1216" width="7.08" height="16" fill="rgb(90,206,140)" rx="1"/>
+</g>
+<g><title>org.springframework.util.StreamUtils$NonClosingOutputStream.write - 1 сэмплов (0.5%)</title><rect x="87.85" y="1199" width="7.08" height="16" fill="rgb(148,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.context.request.async.StandardServletAsyncWebRequest$LifecycleServletOutputStream.write - 1 сэмплов (0.5%)</title><rect x="87.85" y="1182" width="7.08" height="16" fill="rgb(130,200,80)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.connector.CoyoteOutputStream.write - 1 сэмплов (0.5%)</title><rect x="87.85" y="1165" width="7.08" height="16" fill="rgb(206,206,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.connector.OutputBuffer.write - 1 сэмплов (0.5%)</title><rect x="87.85" y="1148" width="7.08" height="16" fill="rgb(217,217,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.connector.OutputBuffer.writeBytes - 1 сэмплов (0.5%)</title><rect x="87.85" y="1131" width="7.08" height="16" fill="rgb(206,206,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.connector.OutputBuffer.append - 1 сэмплов (0.5%)</title><rect x="87.85" y="1114" width="7.08" height="16" fill="rgb(209,209,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.connector.OutputBuffer.flushByteBuffer - 1 сэмплов (0.5%)</title><rect x="87.85" y="1097" width="7.08" height="16" fill="rgb(205,205,190)" rx="1"/>
+</g>
+<g><title>java.nio.HeapByteBuffer.slice - 1 сэмплов (0.5%)</title><rect x="87.85" y="1080" width="7.08" height="16" fill="rgb(213,213,190)" rx="1"/>
+</g>
+<g><title>com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer.serialize - 22 сэмплов (11.3%)</title><rect x="165.69" y="1284" width="155.69" height="16" fill="rgb(90,206,140)" rx="1"/>
+<text x="168.69" y="1296">c.f.j.d.j.s.LocalDate..</text>
+</g>
+<g><title>com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer.serialize - 20 сэмплов (10.3%)</title><rect x="165.69" y="1267" width="141.54" height="16" fill="rgb(90,206,140)" rx="1"/>
+<text x="168.69" y="1279">c.f.j.d.j.s.LocalDa..</text>
+</g>
+<g><title>com.fasterxml.jackson.core.json.UTF8JsonGenerator.writeString - 3 сэмплов (1.5%)</title><rect x="165.69" y="1250" width="21.23" height="16" fill="rgb(90,194,140)" rx="1"/>
+</g>
+<g><title>com.fasterxml.jackson.core.json.UTF8JsonGenerator._writeStringSegment - 3 сэмплов (1.5%)</title><rect x="165.69" y="1233" width="21.23" height="16" fill="rgb(90,205,140)" rx="1"/>
+</g>
+<g><title>java.time.LocalDateTime.format - 17 сэмплов (8.7%)</title><rect x="186.92" y="1250" width="120.31" height="16" fill="rgb(207,207,190)" rx="1"/>
+<text x="189.92" y="1262">j.t.LocalDateTi..</text>
+</g>
+<g><title>java.time.format.DateTimeFormatter.format - 17 сэмплов (8.7%)</title><rect x="186.92" y="1233" width="120.31" height="16" fill="rgb(206,206,190)" rx="1"/>
+<text x="189.92" y="1245">j.t.f.DateTimeF..</text>
+</g>
+<g><title>java.lang.StringBuilder.&lt;init&gt; - 2 сэмплов (1.0%)</title><rect x="186.92" y="1216" width="14.15" height="16" fill="rgb(212,212,190)" rx="1"/>
+</g>
+<g><title>java.lang.StringBuilder.toString - 1 сэмплов (0.5%)</title><rect x="201.08" y="1216" width="7.08" height="16" fill="rgb(206,206,190)" rx="1"/>
+</g>
+<g><title>java.lang.String.&lt;init&gt; - 1 сэмплов (0.5%)</title><rect x="201.08" y="1199" width="7.08" height="16" fill="rgb(213,213,190)" rx="1"/>
+</g>
+<g><title>java.time.format.DateTimeFormatter.formatTo - 14 сэмплов (7.2%)</title><rect x="208.15" y="1216" width="99.08" height="16" fill="rgb(217,217,190)" rx="1"/>
+<text x="211.15" y="1228">j.t.f.DateTi..</text>
+</g>
+<g><title>java.time.format.DateTimeFormatterBuilder$CompositePrinterParser.format - 14 сэмплов (7.2%)</title><rect x="208.15" y="1199" width="99.08" height="16" fill="rgb(210,210,190)" rx="1"/>
+<text x="211.15" y="1211">j.t.f.DateTi..</text>
+</g>
+<g><title>java.time.format.DateTimeFormatterBuilder$CharLiteralPrinterParser.format - 1 сэмплов (0.5%)</title><rect x="208.15" y="1182" width="7.08" height="16" fill="rgb(208,208,190)" rx="1"/>
+</g>
+<g><title>java.lang.StringBuilder.append - 1 сэмплов (0.5%)</title><rect x="208.15" y="1165" width="7.08" height="16" fill="rgb(209,209,190)" rx="1"/>
+</g>
+<g><title>java.lang.AbstractStringBuilder.append - 1 сэмплов (0.5%)</title><rect x="208.15" y="1148" width="7.08" height="16" fill="rgb(215,215,190)" rx="1"/>
+</g>
+<g><title>java.lang.AbstractStringBuilder.ensureCapacityInternal - 1 сэмплов (0.5%)</title><rect x="208.15" y="1131" width="7.08" height="16" fill="rgb(212,212,190)" rx="1"/>
+</g>
+<g><title>java.time.format.DateTimeFormatterBuilder$CompositePrinterParser.format - 13 сэмплов (6.7%)</title><rect x="215.23" y="1182" width="92.00" height="16" fill="rgb(210,210,190)" rx="1"/>
+<text x="218.23" y="1194">j.t.f.DateT..</text>
+</g>
+<g><title>java.lang.StringBuilder.setLength - 1 сэмплов (0.5%)</title><rect x="215.23" y="1165" width="7.08" height="16" fill="rgb(205,205,190)" rx="1"/>
+</g>
+<g><title>java.time.format.DateTimeFormatterBuilder$CompositePrinterParser.format - 6 сэмплов (3.1%)</title><rect x="222.31" y="1165" width="42.46" height="16" fill="rgb(210,210,190)" rx="1"/>
+<text x="225.31" y="1177">j.t..</text>
+</g>
+<g><title>java.time.format.DateTimeFormatterBuilder$CompositePrinterParser.format - 5 сэмплов (2.6%)</title><rect x="222.31" y="1148" width="35.38" height="16" fill="rgb(210,210,190)" rx="1"/>
+<text x="225.31" y="1160">j...</text>
+</g>
+<g><title>java.time.format.DateTimeFormatterBuilder$NanosPrinterParser.format - 5 сэмплов (2.6%)</title><rect x="222.31" y="1131" width="35.38" height="16" fill="rgb(219,219,190)" rx="1"/>
+<text x="225.31" y="1143">j...</text>
+</g>
+<g><title>java.lang.StringBuilder.append - 4 сэмплов (2.1%)</title><rect x="222.31" y="1114" width="28.31" height="16" fill="rgb(209,209,190)" rx="1"/>
+<text x="225.31" y="1126">j..</text>
+</g>
+<g><title>java.lang.AbstractStringBuilder.append - 3 сэмплов (1.5%)</title><rect x="222.31" y="1097" width="21.23" height="16" fill="rgb(215,215,190)" rx="1"/>
+</g>
+<g><title>java.lang.Integer.stringSize - 1 сэмплов (0.5%)</title><rect x="222.31" y="1080" width="7.08" height="16" fill="rgb(207,207,190)" rx="1"/>
+</g>
+<g><title>java.lang.StringLatin1.getChars - 2 сэмплов (1.0%)</title><rect x="229.38" y="1080" width="14.15" height="16" fill="rgb(214,214,190)" rx="1"/>
+</g>
+<g><title>java.time.format.DateTimePrintContext.getValue - 1 сэмплов (0.5%)</title><rect x="250.62" y="1114" width="7.08" height="16" fill="rgb(207,207,190)" rx="1"/>
+</g>
+<g><title>java.time.LocalDateTime.getLong - 1 сэмплов (0.5%)</title><rect x="250.62" y="1097" width="7.08" height="16" fill="rgb(205,205,190)" rx="1"/>
+</g>
+<g><title>java.time.format.DateTimeFormatterBuilder$NumberPrinterParser.format - 1 сэмплов (0.5%)</title><rect x="257.69" y="1148" width="7.08" height="16" fill="rgb(208,208,190)" rx="1"/>
+</g>
+<g><title>java.time.format.DateTimeFormatterBuilder$NumberPrinterParser.format - 5 сэмплов (2.6%)</title><rect x="264.77" y="1165" width="35.38" height="16" fill="rgb(208,208,190)" rx="1"/>
+<text x="267.77" y="1177">j...</text>
+</g>
+<g><title>java.lang.StringBuilder.append - 5 сэмплов (2.6%)</title><rect x="264.77" y="1148" width="35.38" height="16" fill="rgb(209,209,190)" rx="1"/>
+<text x="267.77" y="1160">j...</text>
+</g>
+<g><title>java.lang.AbstractStringBuilder.append - 5 сэмплов (2.6%)</title><rect x="264.77" y="1131" width="35.38" height="16" fill="rgb(215,215,190)" rx="1"/>
+<text x="267.77" y="1143">j...</text>
+</g>
+<g><title>java.lang.AbstractStringBuilder.ensureCapacityInternal - 3 сэмплов (1.5%)</title><rect x="264.77" y="1114" width="21.23" height="16" fill="rgb(212,212,190)" rx="1"/>
+</g>
+<g><title>java.lang.Long.stringSize - 1 сэмплов (0.5%)</title><rect x="286.00" y="1114" width="7.08" height="16" fill="rgb(201,201,190)" rx="1"/>
+</g>
+<g><title>java.lang.StringLatin1.getChars - 1 сэмплов (0.5%)</title><rect x="293.08" y="1114" width="7.08" height="16" fill="rgb(214,214,190)" rx="1"/>
+</g>
+<g><title>java.lang.reflect.Method.invoke - 2 сэмплов (1.0%)</title><rect x="321.38" y="1284" width="14.15" height="16" fill="rgb(205,205,190)" rx="1"/>
+</g>
+<g><title>jdk.internal.reflect.DirectMethodHandleAccessor.invoke - 1 сэмплов (0.5%)</title><rect x="321.38" y="1267" width="7.08" height="16" fill="rgb(210,210,190)" rx="1"/>
+</g>
+<g><title>jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl - 1 сэмплов (0.5%)</title><rect x="321.38" y="1250" width="7.08" height="16" fill="rgb(214,214,190)" rx="1"/>
+</g>
+<g><title>java.lang.invoke.Invokers$Holder.invokeExact_MT - 1 сэмплов (0.5%)</title><rect x="321.38" y="1233" width="7.08" height="16" fill="rgb(200,200,190)" rx="1"/>
+</g>
+<g><title>java.lang.invoke.LambdaForm$MH+0x00001c0001a96000.1891476571.invoke - 1 сэмплов (0.5%)</title><rect x="321.38" y="1216" width="7.08" height="16" fill="rgb(203,203,190)" rx="1"/>
+</g>
+<g><title>java.lang.invoke.LambdaForm$MH+0x00001c0001002400.2101842856.invoke - 1 сэмплов (0.5%)</title><rect x="321.38" y="1199" width="7.08" height="16" fill="rgb(217,217,190)" rx="1"/>
+</g>
+<g><title>java.lang.invoke.DirectMethodHandle$Holder.invokeSpecial - 1 сэмплов (0.5%)</title><rect x="321.38" y="1182" width="7.08" height="16" fill="rgb(215,215,190)" rx="1"/>
+</g>
+<g><title>java.lang.Class.cast - 1 сэмплов (0.5%)</title><rect x="321.38" y="1165" width="7.08" height="16" fill="rgb(218,218,190)" rx="1"/>
+</g>
+<g><title>java.util.ArrayList$Itr.next - 1 сэмплов (0.5%)</title><rect x="342.62" y="1335" width="7.08" height="16" fill="rgb(210,210,190)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.addContentDispositionHeader - 2 сэмплов (1.0%)</title><rect x="349.69" y="1505" width="14.15" height="16" fill="rgb(121,200,80)" rx="1"/>
+</g>
+<g><title>java.lang.String.indexOf - 1 сэмплов (0.5%)</title><rect x="349.69" y="1488" width="7.08" height="16" fill="rgb(216,216,190)" rx="1"/>
+</g>
+<g><title>java.lang.StringLatin1.indexOf - 1 сэмплов (0.5%)</title><rect x="349.69" y="1471" width="7.08" height="16" fill="rgb(218,218,190)" rx="1"/>
+</g>
+<g><title>java.lang.StringLatin1.indexOfChar - 1 сэмплов (0.5%)</title><rect x="349.69" y="1454" width="7.08" height="16" fill="rgb(202,202,190)" rx="1"/>
+</g>
+<g><title>org.springframework.util.StringUtils.getFilenameExtension - 1 сэмплов (0.5%)</title><rect x="356.77" y="1488" width="7.08" height="16" fill="rgb(128,200,80)" rx="1"/>
+</g>
+<g><title>java.lang.String.lastIndexOf - 1 сэмплов (0.5%)</title><rect x="356.77" y="1471" width="7.08" height="16" fill="rgb(202,202,190)" rx="1"/>
+</g>
+<g><title>java.lang.String.lastIndexOf - 1 сэмплов (0.5%)</title><rect x="356.77" y="1454" width="7.08" height="16" fill="rgb(202,202,190)" rx="1"/>
+</g>
+<g><title>java.lang.StringLatin1.lastIndexOf - 1 сэмплов (0.5%)</title><rect x="356.77" y="1437" width="7.08" height="16" fill="rgb(216,216,190)" rx="1"/>
+</g>
+<g><title>org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest - 138 сэмплов (70.8%)</title><rect x="363.85" y="1556" width="976.62" height="16" fill="rgb(140,200,80)" rx="1"/>
+<text x="366.85" y="1568">o.s.w.m.s.InvocableHandlerMethod.invokeForRequest</text>
+</g>
+<g><title>org.springframework.web.method.support.InvocableHandlerMethod.doInvoke - 138 сэмплов (70.8%)</title><rect x="363.85" y="1539" width="976.62" height="16" fill="rgb(146,200,80)" rx="1"/>
+<text x="366.85" y="1551">o.s.w.m.s.InvocableHandlerMethod.doInvoke</text>
+</g>
+<g><title>java.lang.reflect.Method.invoke - 138 сэмплов (70.8%)</title><rect x="363.85" y="1522" width="976.62" height="16" fill="rgb(205,205,190)" rx="1"/>
+<text x="366.85" y="1534">j.l.r.Method.invoke</text>
+</g>
+<g><title>jdk.internal.reflect.DirectMethodHandleAccessor.invoke - 138 сэмплов (70.8%)</title><rect x="363.85" y="1505" width="976.62" height="16" fill="rgb(210,210,190)" rx="1"/>
+<text x="366.85" y="1517">j.i.r.DirectMethodHandleAccessor.invoke</text>
+</g>
+<g><title>jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl - 138 сэмплов (70.8%)</title><rect x="363.85" y="1488" width="976.62" height="16" fill="rgb(214,214,190)" rx="1"/>
+<text x="366.85" y="1500">j.i.r.DirectMethodHandleAccessor.invokeImpl</text>
+</g>
+<g><title>java.lang.invoke.Invokers$Holder.invokeExact_MT - 138 сэмплов (70.8%)</title><rect x="363.85" y="1471" width="976.62" height="16" fill="rgb(200,200,190)" rx="1"/>
+<text x="366.85" y="1483">j.l.i.Invokers$Holder.invokeExact_MT</text>
+</g>
+<g><title>java.lang.invoke.LambdaForm$MH+0x00001c0001a9a400.1451834162.invoke - 138 сэмплов (70.8%)</title><rect x="363.85" y="1454" width="976.62" height="16" fill="rgb(208,208,190)" rx="1"/>
+<text x="366.85" y="1466">j.l.i.L.1451834162.invoke</text>
+</g>
+<g><title>java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual - 138 сэмплов (70.8%)</title><rect x="363.85" y="1437" width="976.62" height="16" fill="rgb(209,209,190)" rx="1"/>
+<text x="366.85" y="1449">j.l.i.DirectMethodHandle$Holder.invokeVirtual</text>
+</g>
+<g><title>messages.web.MessageController.optimized - 138 сэмплов (70.8%)</title><rect x="363.85" y="1420" width="976.62" height="16" fill="rgb(60,167,230)" rx="1"/>
+<text x="366.85" y="1432">m.w.MessageController.optimized</text>
+</g>
+<g><title>messages.service.MessageService$$SpringCGLIB$$0.getMessagesOptimized - 138 сэмплов (70.8%)</title><rect x="363.85" y="1403" width="976.62" height="16" fill="rgb(60,162,230)" rx="1"/>
+<text x="366.85" y="1415">m.s.MessageService$$SpringCGLIB$$0.getMessagesOptimized</text>
+</g>
+<g><title>org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept - 138 сэмплов (70.8%)</title><rect x="363.85" y="1386" width="976.62" height="16" fill="rgb(151,200,80)" rx="1"/>
+<text x="366.85" y="1398">o.s.a.f.CglibAopProxy$DynamicAdvisedInterceptor.intercept</text>
+</g>
+<g><title>org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed - 138 сэмплов (70.8%)</title><rect x="363.85" y="1369" width="976.62" height="16" fill="rgb(136,200,80)" rx="1"/>
+<text x="366.85" y="1381">o.s.a.f.CglibAopProxy$CglibMethodInvocation.proceed</text>
+</g>
+<g><title>org.springframework.aop.framework.ReflectiveMethodInvocation.proceed - 138 сэмплов (70.8%)</title><rect x="363.85" y="1352" width="976.62" height="16" fill="rgb(136,200,80)" rx="1"/>
+<text x="366.85" y="1364">o.s.a.f.ReflectiveMethodInvocation.proceed</text>
+</g>
+<g><title>org.springframework.transaction.interceptor.TransactionInterceptor.invoke - 138 сэмплов (70.8%)</title><rect x="363.85" y="1335" width="976.62" height="16" fill="rgb(151,200,80)" rx="1"/>
+<text x="366.85" y="1347">o.s.t.i.TransactionInterceptor.invoke</text>
+</g>
+<g><title>org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction - 138 сэмплов (70.8%)</title><rect x="363.85" y="1318" width="976.62" height="16" fill="rgb(154,200,80)" rx="1"/>
+<text x="366.85" y="1330">o.s.t.i.TransactionAspectSupport.invokeWithinTransaction</text>
+</g>
+<g><title>org.springframework.transaction.interceptor.TransactionAspectSupport.cleanupTransactionInfo - 1 сэмплов (0.5%)</title><rect x="363.85" y="1301" width="7.08" height="16" fill="rgb(123,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.transaction.interceptor.TransactionAspectSupport$TransactionInfo.restoreThreadLocalStatus - 1 сэмплов (0.5%)</title><rect x="363.85" y="1284" width="7.08" height="16" fill="rgb(154,200,80)" rx="1"/>
+</g>
+<g><title>java.lang.ThreadLocal.set - 1 сэмплов (0.5%)</title><rect x="363.85" y="1267" width="7.08" height="16" fill="rgb(218,218,190)" rx="1"/>
+</g>
+<g><title>java.lang.ThreadLocal.set - 1 сэмплов (0.5%)</title><rect x="363.85" y="1250" width="7.08" height="16" fill="rgb(218,218,190)" rx="1"/>
+</g>
+<g><title>org.springframework.transaction.interceptor.TransactionAspectSupport.commitTransactionAfterReturning - 60 сэмплов (30.8%)</title><rect x="370.92" y="1301" width="424.62" height="16" fill="rgb(121,200,80)" rx="1"/>
+<text x="373.92" y="1313">o.s.t.i.TransactionAspectSupport.commitTransactionAfterReturning</text>
+</g>
+<g><title>org.springframework.transaction.support.AbstractPlatformTransactionManager.commit - 60 сэмплов (30.8%)</title><rect x="370.92" y="1284" width="424.62" height="16" fill="rgb(135,200,80)" rx="1"/>
+<text x="373.92" y="1296">o.s.t.s.AbstractPlatformTransactionManager.commit</text>
+</g>
+<g><title>org.springframework.transaction.support.AbstractPlatformTransactionManager.processCommit - 60 сэмплов (30.8%)</title><rect x="370.92" y="1267" width="424.62" height="16" fill="rgb(122,200,80)" rx="1"/>
+<text x="373.92" y="1279">o.s.t.s.AbstractPlatformTransactionManager.processCommit</text>
+</g>
+<g><title>org.springframework.orm.jpa.JpaTransactionManager.doCommit - 15 сэмплов (7.7%)</title><rect x="370.92" y="1250" width="106.15" height="16" fill="rgb(123,200,80)" rx="1"/>
+<text x="373.92" y="1262">o.s.o.j.JpaTr..</text>
+</g>
+<g><title>org.hibernate.engine.transaction.internal.TransactionImpl.commit - 15 сэмплов (7.7%)</title><rect x="370.92" y="1233" width="106.15" height="16" fill="rgb(230,175,50)" rx="1"/>
+<text x="373.92" y="1245">o.h.e.t.i.Tra..</text>
+</g>
+<g><title>org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl$TransactionDriverControlImpl.commit - 15 сэмплов (7.7%)</title><rect x="370.92" y="1216" width="106.15" height="16" fill="rgb(230,163,50)" rx="1"/>
+<text x="373.92" y="1228">o.h.r.t.b.j.i..</text>
+</g>
+<g><title>org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.afterCompletionCallback - 15 сэмплов (7.7%)</title><rect x="370.92" y="1199" width="106.15" height="16" fill="rgb(230,166,50)" rx="1"/>
+<text x="373.92" y="1211">o.h.r.t.b.j.i..</text>
+</g>
+<g><title>org.hibernate.engine.jdbc.internal.JdbcCoordinatorImpl.afterTransactionCompletion - 15 сэмплов (7.7%)</title><rect x="370.92" y="1182" width="106.15" height="16" fill="rgb(230,165,50)" rx="1"/>
+<text x="373.92" y="1194">o.h.e.j.i.Jdb..</text>
+</g>
+<g><title>org.hibernate.internal.SessionImpl.afterTransactionCompletion - 15 сэмплов (7.7%)</title><rect x="370.92" y="1165" width="106.15" height="16" fill="rgb(230,160,50)" rx="1"/>
+<text x="373.92" y="1177">o.h.i.Session..</text>
+</g>
+<g><title>org.hibernate.engine.internal.StatefulPersistenceContext.afterTransactionCompletion - 15 сэмплов (7.7%)</title><rect x="370.92" y="1148" width="106.15" height="16" fill="rgb(230,188,50)" rx="1"/>
+<text x="373.92" y="1160">o.h.e.i.State..</text>
+</g>
+<g><title>org.hibernate.engine.internal.EntityEntryContext.downgradeLocks - 15 сэмплов (7.7%)</title><rect x="370.92" y="1131" width="106.15" height="16" fill="rgb(230,186,50)" rx="1"/>
+<text x="373.92" y="1143">o.h.e.i.Entit..</text>
+</g>
+<g><title>org.hibernate.engine.internal.EntityEntryContext.processEachManagedEntity - 15 сэмплов (7.7%)</title><rect x="370.92" y="1114" width="106.15" height="16" fill="rgb(230,152,50)" rx="1"/>
+<text x="373.92" y="1126">o.h.e.i.Entit..</text>
+</g>
+<g><title>org.hibernate.engine.internal.EntityEntryContext$$Lambda+0x00001c0001a2cb18.1767262923.accept - 7 сэмплов (3.6%)</title><rect x="370.92" y="1097" width="49.54" height="16" fill="rgb(230,166,50)" rx="1"/>
+<text x="373.92" y="1109">o.h.e..</text>
+</g>
+<g><title>org.hibernate.engine.internal.EntityEntryContext.downgradeLockOnManagedEntity - 7 сэмплов (3.6%)</title><rect x="370.92" y="1080" width="49.54" height="16" fill="rgb(230,169,50)" rx="1"/>
+<text x="373.92" y="1092">o.h.e..</text>
+</g>
+<g><title>org.hibernate.engine.internal.AbstractEntityEntry.setLockMode - 7 сэмплов (3.6%)</title><rect x="370.92" y="1063" width="49.54" height="16" fill="rgb(230,180,50)" rx="1"/>
+<text x="373.92" y="1075">o.h.e..</text>
+</g>
+<g><title>org.hibernate.engine.internal.AbstractEntityEntry.setCompressedValue - 1 сэмплов (0.5%)</title><rect x="370.92" y="1046" width="7.08" height="16" fill="rgb(230,173,50)" rx="1"/>
+</g>
+<g><title>org.springframework.transaction.support.AbstractPlatformTransactionManager.cleanupAfterCompletion - 45 сэмплов (23.1%)</title><rect x="477.08" y="1250" width="318.46" height="16" fill="rgb(155,200,80)" rx="1"/>
+<text x="480.08" y="1262">o.s.t.s.AbstractPlatformTransactionManager.cle..</text>
+</g>
+<g><title>org.springframework.orm.jpa.JpaTransactionManager.doCleanupAfterCompletion - 45 сэмплов (23.1%)</title><rect x="477.08" y="1233" width="318.46" height="16" fill="rgb(147,200,80)" rx="1"/>
+<text x="480.08" y="1245">o.s.o.j.JpaTransactionManager.doCleanupAfterCo..</text>
+</g>
+<g><title>org.springframework.orm.jpa.EntityManagerFactoryUtils.closeEntityManager - 45 сэмплов (23.1%)</title><rect x="477.08" y="1216" width="318.46" height="16" fill="rgb(131,200,80)" rx="1"/>
+<text x="480.08" y="1228">o.s.o.j.EntityManagerFactoryUtils.closeEntityM..</text>
+</g>
+<g><title>org.hibernate.internal.SessionImpl.close - 45 сэмплов (23.1%)</title><rect x="477.08" y="1199" width="318.46" height="16" fill="rgb(230,174,50)" rx="1"/>
+<text x="480.08" y="1211">o.h.i.SessionImpl.close</text>
+</g>
+<g><title>org.hibernate.internal.SessionImpl.closeWithoutOpenChecks - 45 сэмплов (23.1%)</title><rect x="477.08" y="1182" width="318.46" height="16" fill="rgb(230,187,50)" rx="1"/>
+<text x="480.08" y="1194">o.h.i.SessionImpl.closeWithoutOpenChecks</text>
+</g>
+<g><title>org.hibernate.internal.AbstractSharedSessionContract.close - 45 сэмплов (23.1%)</title><rect x="477.08" y="1165" width="318.46" height="16" fill="rgb(230,166,50)" rx="1"/>
+<text x="480.08" y="1177">o.h.i.AbstractSharedSessionContract.close</text>
+</g>
+<g><title>org.hibernate.internal.AbstractSharedSessionContract.setClosed - 45 сэмплов (23.1%)</title><rect x="477.08" y="1148" width="318.46" height="16" fill="rgb(230,180,50)" rx="1"/>
+<text x="480.08" y="1160">o.h.i.AbstractSharedSessionContract.setClosed</text>
+</g>
+<g><title>org.hibernate.internal.SessionImpl.cleanupOnClose - 45 сэмплов (23.1%)</title><rect x="477.08" y="1131" width="318.46" height="16" fill="rgb(230,165,50)" rx="1"/>
+<text x="480.08" y="1143">o.h.i.SessionImpl.cleanupOnClose</text>
+</g>
+<g><title>org.hibernate.engine.internal.StatefulPersistenceContext.clear - 45 сэмплов (23.1%)</title><rect x="477.08" y="1114" width="318.46" height="16" fill="rgb(230,155,50)" rx="1"/>
+<text x="480.08" y="1126">o.h.e.i.StatefulPersistenceContext.clear</text>
+</g>
+<g><title>java.util.HashMap$ValueIterator.next - 11 сэмплов (5.6%)</title><rect x="477.08" y="1097" width="77.85" height="16" fill="rgb(213,213,190)" rx="1"/>
+<text x="480.08" y="1109">j.u.HashM..</text>
+</g>
+<g><title>java.util.HashMap$HashIterator.nextNode - 11 сэмплов (5.6%)</title><rect x="477.08" y="1080" width="77.85" height="16" fill="rgb(210,210,190)" rx="1"/>
+<text x="480.08" y="1092">j.u.HashM..</text>
+</g>
+<g><title>org.hibernate.engine.internal.EntityEntryContext.clear - 24 сэмплов (12.3%)</title><rect x="554.92" y="1097" width="169.85" height="16" fill="rgb(230,167,50)" rx="1"/>
+<text x="557.92" y="1109">o.h.e.i.EntityEntryCont..</text>
+</g>
+<g><title>java.util.IdentityHashMap.clear - 6 сэмплов (3.1%)</title><rect x="554.92" y="1080" width="42.46" height="16" fill="rgb(206,206,190)" rx="1"/>
+<text x="557.92" y="1092">j.u..</text>
+</g>
+<g><title>org.hibernate.engine.internal.EntityEntryContext.clearAllReferencesFromManagedEntities - 18 сэмплов (9.2%)</title><rect x="597.38" y="1080" width="127.38" height="16" fill="rgb(230,159,50)" rx="1"/>
+<text x="600.38" y="1092">o.h.e.i.EntityEn..</text>
+</g>
+<g><title>org.hibernate.engine.internal.EntityEntryContext.unsetSession - 1 сэмплов (0.5%)</title><rect x="597.38" y="1063" width="7.08" height="16" fill="rgb(230,187,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.engine.internal.ManagedTypeHelper.asPersistentAttributeInterceptableOrNull - 11 сэмплов (5.6%)</title><rect x="604.46" y="1063" width="77.85" height="16" fill="rgb(230,151,50)" rx="1"/>
+<text x="607.46" y="1075">o.h.e.i.M..</text>
+</g>
+<g><title>org.hibernate.proxy.HibernateProxy.extractLazyInitializer - 3 сэмплов (1.5%)</title><rect x="724.77" y="1097" width="21.23" height="16" fill="rgb(230,68,60)" rx="1"/>
+</g>
+<g><title>org.jboss.logging.Slf4jLocationAwareLogger.isEnabled - 6 сэмплов (3.1%)</title><rect x="746.00" y="1097" width="42.46" height="16" fill="rgb(217,217,190)" rx="1"/>
+<text x="749.00" y="1109">o.j..</text>
+</g>
+<g><title>ch.qos.logback.classic.Logger.isTraceEnabled - 6 сэмплов (3.1%)</title><rect x="746.00" y="1080" width="42.46" height="16" fill="rgb(203,203,190)" rx="1"/>
+<text x="749.00" y="1092">c.q..</text>
+</g>
+<g><title>org.hibernate.engine.internal.EntityEntryContext.clearAllReferencesFromManagedEntities - 6 сэмплов (3.1%)</title><rect x="746.00" y="1063" width="42.46" height="16" fill="rgb(230,159,50)" rx="1"/>
+<text x="749.00" y="1075">o.h..</text>
+</g>
+<g><title>org.hibernate.engine.internal.ManagedTypeHelper.asPersistentAttributeInterceptableOrNull - 6 сэмплов (3.1%)</title><rect x="746.00" y="1046" width="42.46" height="16" fill="rgb(230,151,50)" rx="1"/>
+<text x="749.00" y="1058">o.h..</text>
+</g>
+<g><title>org.springframework.transaction.interceptor.TransactionInterceptor$$Lambda+0x00001c00019f3b78.115369696.proceedWithInvocation - 77 сэмплов (39.5%)</title><rect x="795.54" y="1301" width="544.92" height="16" fill="rgb(123,200,80)" rx="1"/>
+<text x="798.54" y="1313">o.s.t.i.T.115369696.proceedWithInvocation</text>
+</g>
+<g><title>org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed - 77 сэмплов (39.5%)</title><rect x="795.54" y="1284" width="544.92" height="16" fill="rgb(136,200,80)" rx="1"/>
+<text x="798.54" y="1296">o.s.a.f.CglibAopProxy$CglibMethodInvocation.proceed</text>
+</g>
+<g><title>org.springframework.aop.framework.ReflectiveMethodInvocation.proceed - 77 сэмплов (39.5%)</title><rect x="795.54" y="1267" width="544.92" height="16" fill="rgb(136,200,80)" rx="1"/>
+<text x="798.54" y="1279">o.s.a.f.ReflectiveMethodInvocation.proceed</text>
+</g>
+<g><title>org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint - 77 сэмплов (39.5%)</title><rect x="795.54" y="1250" width="544.92" height="16" fill="rgb(131,200,80)" rx="1"/>
+<text x="798.54" y="1262">o.s.a.f.ReflectiveMethodInvocation.invokeJoinpoint</text>
+</g>
+<g><title>org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection - 77 сэмплов (39.5%)</title><rect x="795.54" y="1233" width="544.92" height="16" fill="rgb(138,200,80)" rx="1"/>
+<text x="798.54" y="1245">o.s.a.s.AopUtils.invokeJoinpointUsingReflection</text>
+</g>
+<g><title>java.lang.reflect.Method.invoke - 77 сэмплов (39.5%)</title><rect x="795.54" y="1216" width="544.92" height="16" fill="rgb(205,205,190)" rx="1"/>
+<text x="798.54" y="1228">j.l.r.Method.invoke</text>
+</g>
+<g><title>jdk.internal.reflect.DirectMethodHandleAccessor.invoke - 77 сэмплов (39.5%)</title><rect x="795.54" y="1199" width="544.92" height="16" fill="rgb(210,210,190)" rx="1"/>
+<text x="798.54" y="1211">j.i.r.DirectMethodHandleAccessor.invoke</text>
+</g>
+<g><title>jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl - 77 сэмплов (39.5%)</title><rect x="795.54" y="1182" width="544.92" height="16" fill="rgb(214,214,190)" rx="1"/>
+<text x="798.54" y="1194">j.i.r.DirectMethodHandleAccessor.invokeImpl</text>
+</g>
+<g><title>java.lang.invoke.Invokers$Holder.invokeExact_MT - 77 сэмплов (39.5%)</title><rect x="795.54" y="1165" width="544.92" height="16" fill="rgb(200,200,190)" rx="1"/>
+<text x="798.54" y="1177">j.l.i.Invokers$Holder.invokeExact_MT</text>
+</g>
+<g><title>java.lang.invoke.LambdaForm$MH+0x00001c0001a9a000.576097464.invoke - 76 сэмплов (39.0%)</title><rect x="795.54" y="1148" width="537.85" height="16" fill="rgb(217,217,190)" rx="1"/>
+<text x="798.54" y="1160">j.l.i.L.576097464.invoke</text>
+</g>
+<g><title>java.lang.invoke.DirectMethodHandle$Holder.invokeVirtual - 76 сэмплов (39.0%)</title><rect x="795.54" y="1131" width="537.85" height="16" fill="rgb(209,209,190)" rx="1"/>
+<text x="798.54" y="1143">j.l.i.DirectMethodHandle$Holder.invokeVirtual</text>
+</g>
+<g><title>messages.service.MessageService.getMessagesOptimized - 76 сэмплов (39.0%)</title><rect x="795.54" y="1114" width="537.85" height="16" fill="rgb(60,177,230)" rx="1"/>
+<text x="798.54" y="1126">m.s.MessageService.getMessagesOptimized</text>
+</g>
+<g><title>java.util.ArrayList$Itr.next - 4 сэмплов (2.1%)</title><rect x="795.54" y="1097" width="28.31" height="16" fill="rgb(210,210,190)" rx="1"/>
+<text x="798.54" y="1109">j..</text>
+</g>
+<g><title>java.util.ArrayList.add - 3 сэмплов (1.5%)</title><rect x="823.85" y="1097" width="21.23" height="16" fill="rgb(217,217,190)" rx="1"/>
+</g>
+<g><title>java.util.ArrayList.add - 3 сэмплов (1.5%)</title><rect x="823.85" y="1080" width="21.23" height="16" fill="rgb(217,217,190)" rx="1"/>
+</g>
+<g><title>java.util.ArrayList.grow - 2 сэмплов (1.0%)</title><rect x="823.85" y="1063" width="14.15" height="16" fill="rgb(202,202,190)" rx="1"/>
+</g>
+<g><title>jdk.proxy2.$Proxy136.findAllWithAuthor - 60 сэмплов (30.8%)</title><rect x="845.08" y="1097" width="424.62" height="16" fill="rgb(207,207,190)" rx="1"/>
+<text x="848.08" y="1109">j.p.$Proxy136.findAllWithAuthor</text>
+</g>
+<g><title>org.springframework.aop.framework.JdkDynamicAopProxy.invoke - 59 сэмплов (30.3%)</title><rect x="845.08" y="1080" width="417.54" height="16" fill="rgb(138,200,80)" rx="1"/>
+<text x="848.08" y="1092">o.s.a.f.JdkDynamicAopProxy.invoke</text>
+</g>
+<g><title>org.springframework.aop.framework.ReflectiveMethodInvocation.proceed - 59 сэмплов (30.3%)</title><rect x="845.08" y="1063" width="417.54" height="16" fill="rgb(136,200,80)" rx="1"/>
+<text x="848.08" y="1075">o.s.a.f.ReflectiveMethodInvocation.proceed</text>
+</g>
+<g><title>org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke - 59 сэмплов (30.3%)</title><rect x="845.08" y="1046" width="417.54" height="16" fill="rgb(131,200,80)" rx="1"/>
+<text x="848.08" y="1058">o.s.a.i.ExposeInvocationInterceptor.invoke</text>
+</g>
+<g><title>org.springframework.aop.framework.ReflectiveMethodInvocation.proceed - 59 сэмплов (30.3%)</title><rect x="845.08" y="1029" width="417.54" height="16" fill="rgb(136,200,80)" rx="1"/>
+<text x="848.08" y="1041">o.s.a.f.ReflectiveMethodInvocation.proceed</text>
+</g>
+<g><title>org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke - 59 сэмплов (30.3%)</title><rect x="845.08" y="1012" width="417.54" height="16" fill="rgb(148,200,80)" rx="1"/>
+<text x="848.08" y="1024">o.s.d.j.r.s.CrudMethodMetadataPostProcessor$CrudMethodMetadat..</text>
+</g>
+<g><title>org.springframework.aop.framework.ReflectiveMethodInvocation.proceed - 59 сэмплов (30.3%)</title><rect x="845.08" y="995" width="417.54" height="16" fill="rgb(136,200,80)" rx="1"/>
+<text x="848.08" y="1007">o.s.a.f.ReflectiveMethodInvocation.proceed</text>
+</g>
+<g><title>org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke - 59 сэмплов (30.3%)</title><rect x="845.08" y="978" width="417.54" height="16" fill="rgb(128,200,80)" rx="1"/>
+<text x="848.08" y="990">o.s.d.s.PersistenceExceptionTranslationInterceptor.invoke</text>
+</g>
+<g><title>org.springframework.aop.framework.ReflectiveMethodInvocation.proceed - 59 сэмплов (30.3%)</title><rect x="845.08" y="961" width="417.54" height="16" fill="rgb(136,200,80)" rx="1"/>
+<text x="848.08" y="973">o.s.a.f.ReflectiveMethodInvocation.proceed</text>
+</g>
+<g><title>org.springframework.transaction.interceptor.TransactionInterceptor.invoke - 59 сэмплов (30.3%)</title><rect x="845.08" y="944" width="417.54" height="16" fill="rgb(151,200,80)" rx="1"/>
+<text x="848.08" y="956">o.s.t.i.TransactionInterceptor.invoke</text>
+</g>
+<g><title>org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction - 59 сэмплов (30.3%)</title><rect x="845.08" y="927" width="417.54" height="16" fill="rgb(154,200,80)" rx="1"/>
+<text x="848.08" y="939">o.s.t.i.TransactionAspectSupport.invokeWithinTransaction</text>
+</g>
+<g><title>org.springframework.transaction.interceptor.TransactionInterceptor$$Lambda+0x00001c00019f3b78.115369696.proceedWithInvocation - 59 сэмплов (30.3%)</title><rect x="845.08" y="910" width="417.54" height="16" fill="rgb(123,200,80)" rx="1"/>
+<text x="848.08" y="922">o.s.t.i.T.115369696.proceedWithInvocation</text>
+</g>
+<g><title>org.springframework.aop.framework.ReflectiveMethodInvocation.proceed - 59 сэмплов (30.3%)</title><rect x="845.08" y="893" width="417.54" height="16" fill="rgb(136,200,80)" rx="1"/>
+<text x="848.08" y="905">o.s.a.f.ReflectiveMethodInvocation.proceed</text>
+</g>
+<g><title>org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke - 59 сэмплов (30.3%)</title><rect x="845.08" y="876" width="417.54" height="16" fill="rgb(120,200,80)" rx="1"/>
+<text x="848.08" y="888">o.s.d.p.DefaultMethodInvokingMethodInterceptor.invoke</text>
+</g>
+<g><title>org.springframework.aop.framework.ReflectiveMethodInvocation.proceed - 59 сэмплов (30.3%)</title><rect x="845.08" y="859" width="417.54" height="16" fill="rgb(136,200,80)" rx="1"/>
+<text x="848.08" y="871">o.s.a.f.ReflectiveMethodInvocation.proceed</text>
+</g>
+<g><title>org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke - 59 сэмплов (30.3%)</title><rect x="845.08" y="842" width="417.54" height="16" fill="rgb(158,200,80)" rx="1"/>
+<text x="848.08" y="854">o.s.d.r.c.s.QueryExecutorMethodInterceptor.invoke</text>
+</g>
+<g><title>org.springframework.data.repository.core.support.QueryExecutionResultHandler.postProcessInvocationResult - 1 сэмплов (0.5%)</title><rect x="845.08" y="825" width="7.08" height="16" fill="rgb(146,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.data.repository.core.support.QueryExecutionResultHandler.postProcessInvocationResult - 1 сэмплов (0.5%)</title><rect x="845.08" y="808" width="7.08" height="16" fill="rgb(146,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.data.repository.core.support.QueryExecutionResultHandler.requiresConversion - 1 сэмплов (0.5%)</title><rect x="845.08" y="791" width="7.08" height="16" fill="rgb(136,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke - 58 сэмплов (29.7%)</title><rect x="852.15" y="825" width="410.46" height="16" fill="rgb(159,200,80)" rx="1"/>
+<text x="855.15" y="837">o.s.d.r.c.s.QueryExecutorMethodInterceptor.doInvoke</text>
+</g>
+<g><title>org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke - 58 сэмплов (29.7%)</title><rect x="852.15" y="808" width="410.46" height="16" fill="rgb(144,200,80)" rx="1"/>
+<text x="855.15" y="820">o.s.d.r.c.s.RepositoryMethodInvoker.invoke</text>
+</g>
+<g><title>org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke - 58 сэмплов (29.7%)</title><rect x="852.15" y="791" width="410.46" height="16" fill="rgb(124,200,80)" rx="1"/>
+<text x="855.15" y="803">o.s.d.r.c.s.RepositoryMethodInvoker.doInvoke</text>
+</g>
+<g><title>org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryQueryMethodInvoker$$Lambda+0x00001c00019f7070.637588189.invoke - 58 сэмплов (29.7%)</title><rect x="852.15" y="774" width="410.46" height="16" fill="rgb(134,200,80)" rx="1"/>
+<text x="855.15" y="786">o.s.d.r.c.s.R.637588189.invoke</text>
+</g>
+<g><title>org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute - 58 сэмплов (29.7%)</title><rect x="852.15" y="757" width="410.46" height="16" fill="rgb(132,200,80)" rx="1"/>
+<text x="855.15" y="769">o.s.d.j.r.q.AbstractJpaQuery.execute</text>
+</g>
+<g><title>org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute - 58 сэмплов (29.7%)</title><rect x="852.15" y="740" width="410.46" height="16" fill="rgb(150,200,80)" rx="1"/>
+<text x="855.15" y="752">o.s.d.j.r.q.AbstractJpaQuery.doExecute</text>
+</g>
+<g><title>org.springframework.data.jpa.repository.query.JpaQueryExecution.execute - 58 сэмплов (29.7%)</title><rect x="852.15" y="723" width="410.46" height="16" fill="rgb(142,200,80)" rx="1"/>
+<text x="855.15" y="735">o.s.d.j.r.q.JpaQueryExecution.execute</text>
+</g>
+<g><title>org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute - 58 сэмплов (29.7%)</title><rect x="852.15" y="706" width="410.46" height="16" fill="rgb(125,200,80)" rx="1"/>
+<text x="855.15" y="718">o.s.d.j.r.q.JpaQueryExecution$CollectionExecution.doExecute</text>
+</g>
+<g><title>org.hibernate.query.Query.getResultList - 57 сэмплов (29.2%)</title><rect x="852.15" y="689" width="403.38" height="16" fill="rgb(230,162,50)" rx="1"/>
+<text x="855.15" y="701">o.h.q.Query.getResultList</text>
+</g>
+<g><title>org.hibernate.query.spi.AbstractSelectionQuery.list - 57 сэмплов (29.2%)</title><rect x="852.15" y="672" width="403.38" height="16" fill="rgb(230,177,50)" rx="1"/>
+<text x="855.15" y="684">o.h.q.s.AbstractSelectionQuery.list</text>
+</g>
+<g><title>org.hibernate.query.spi.AbstractSelectionQuery.afterQueryHandlingFetchProfiles - 1 сэмплов (0.5%)</title><rect x="852.15" y="655" width="7.08" height="16" fill="rgb(230,156,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.query.spi.AbstractSelectionQuery.afterQuery - 1 сэмплов (0.5%)</title><rect x="852.15" y="638" width="7.08" height="16" fill="rgb(230,155,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.internal.AbstractSharedSessionContract.isTransactionInProgress - 1 сэмплов (0.5%)</title><rect x="852.15" y="621" width="7.08" height="16" fill="rgb(230,181,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.resource.transaction.spi.TransactionCoordinator.isTransactionActive - 1 сэмплов (0.5%)</title><rect x="852.15" y="604" width="7.08" height="16" fill="rgb(230,165,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.resource.transaction.spi.TransactionCoordinator.isTransactionActive - 1 сэмплов (0.5%)</title><rect x="852.15" y="587" width="7.08" height="16" fill="rgb(230,165,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.isJoined - 1 сэмплов (0.5%)</title><rect x="852.15" y="570" width="7.08" height="16" fill="rgb(230,177,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorImpl.getTransactionDriverControl - 1 сэмплов (0.5%)</title><rect x="852.15" y="553" width="7.08" height="16" fill="rgb(230,167,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.query.sqm.internal.QuerySqmImpl.doList - 56 сэмплов (28.7%)</title><rect x="859.23" y="655" width="396.31" height="16" fill="rgb(230,166,50)" rx="1"/>
+<text x="862.23" y="667">o.h.q.s.i.QuerySqmImpl.doList</text>
+</g>
+<g><title>org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.performList - 56 сэмплов (28.7%)</title><rect x="859.23" y="638" width="396.31" height="16" fill="rgb(230,175,50)" rx="1"/>
+<text x="862.23" y="650">o.h.q.s.i.ConcreteSqmSelectQueryPlan.performList</text>
+</g>
+<g><title>org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.withCacheableSqmInterpretation - 56 сэмплов (28.7%)</title><rect x="859.23" y="621" width="396.31" height="16" fill="rgb(230,175,50)" rx="1"/>
+<text x="862.23" y="633">o.h.q.s.i.ConcreteSqmSelectQueryPlan.withCacheableSqmInter..</text>
+</g>
+<g><title>org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan$$Lambda+0x00001c00019ff088.856068111.interpret - 56 сэмплов (28.7%)</title><rect x="859.23" y="604" width="396.31" height="16" fill="rgb(230,165,50)" rx="1"/>
+<text x="862.23" y="616">o.h.q.s.i.C.856068111.interpret</text>
+</g>
+<g><title>org.hibernate.query.sqm.internal.ConcreteSqmSelectQueryPlan.lambda$new$2 - 56 сэмплов (28.7%)</title><rect x="859.23" y="587" width="396.31" height="16" fill="rgb(230,161,50)" rx="1"/>
+<text x="862.23" y="599">o.h.q.s.i.ConcreteSqmSelectQueryPlan.lambda$new$2</text>
+</g>
+<g><title>org.hibernate.sql.exec.spi.JdbcSelectExecutor.list - 56 сэмплов (28.7%)</title><rect x="859.23" y="570" width="396.31" height="16" fill="rgb(230,153,50)" rx="1"/>
+<text x="862.23" y="582">o.h.s.e.s.JdbcSelectExecutor.list</text>
+</g>
+<g><title>org.hibernate.sql.exec.spi.JdbcSelectExecutor.list - 56 сэмплов (28.7%)</title><rect x="859.23" y="553" width="396.31" height="16" fill="rgb(230,153,50)" rx="1"/>
+<text x="862.23" y="565">o.h.s.e.s.JdbcSelectExecutor.list</text>
+</g>
+<g><title>org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.executeQuery - 56 сэмплов (28.7%)</title><rect x="859.23" y="536" width="396.31" height="16" fill="rgb(230,179,50)" rx="1"/>
+<text x="862.23" y="548">o.h.s.e.i.JdbcSelectExecutorStandardImpl.executeQuery</text>
+</g>
+<g><title>org.hibernate.sql.exec.internal.JdbcSelectExecutorStandardImpl.doExecuteQuery - 56 сэмплов (28.7%)</title><rect x="859.23" y="519" width="396.31" height="16" fill="rgb(230,166,50)" rx="1"/>
+<text x="862.23" y="531">o.h.s.e.i.JdbcSelectExecutorStandardImpl.doExecuteQuery</text>
+</g>
+<g><title>org.hibernate.sql.results.internal.ResultsHelper.createRowReader - 2 сэмплов (1.0%)</title><rect x="859.23" y="502" width="14.15" height="16" fill="rgb(230,156,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.internal.ResultsHelper.createRowReader - 2 сэмплов (1.0%)</title><rect x="859.23" y="485" width="14.15" height="16" fill="rgb(230,156,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.jdbc.internal.StandardJdbcValuesMapping.resolveAssemblers - 2 сэмплов (1.0%)</title><rect x="859.23" y="468" width="14.15" height="16" fill="rgb(230,181,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.internal.util.collections.CollectionHelper.arrayList - 1 сэмплов (0.5%)</title><rect x="859.23" y="451" width="7.08" height="16" fill="rgb(230,163,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.internal.EntityResultImpl.createResultAssembler - 1 сэмплов (0.5%)</title><rect x="866.31" y="451" width="7.08" height="16" fill="rgb(230,160,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.internal.ResultsHelper$1.resolveInitializer - 1 сэмплов (0.5%)</title><rect x="866.31" y="434" width="7.08" height="16" fill="rgb(230,154,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.internal.ResultsHelper$1.resolveInitializer - 1 сэмплов (0.5%)</title><rect x="866.31" y="417" width="7.08" height="16" fill="rgb(230,154,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.internal.EntityResultImpl.createInitializer - 1 сэмплов (0.5%)</title><rect x="866.31" y="400" width="7.08" height="16" fill="rgb(230,161,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.internal.EntityResultImpl.createInitializer - 1 сэмплов (0.5%)</title><rect x="866.31" y="383" width="7.08" height="16" fill="rgb(230,161,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.internal.EntityResultImpl.createInitializer - 1 сэмплов (0.5%)</title><rect x="866.31" y="366" width="7.08" height="16" fill="rgb(230,161,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.internal.EntityResultInitializer.&lt;init&gt; - 1 сэмплов (0.5%)</title><rect x="866.31" y="349" width="7.08" height="16" fill="rgb(230,170,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.&lt;init&gt; - 1 сэмплов (0.5%)</title><rect x="866.31" y="332" width="7.08" height="16" fill="rgb(230,184,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.internal.EntityFetchJoinedImpl.createAssembler - 1 сэмплов (0.5%)</title><rect x="866.31" y="315" width="7.08" height="16" fill="rgb(230,156,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.internal.ResultsHelper$1.resolveInitializer - 1 сэмплов (0.5%)</title><rect x="866.31" y="298" width="7.08" height="16" fill="rgb(230,154,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.internal.ResultsHelper$1.resolveInitializer - 1 сэмплов (0.5%)</title><rect x="866.31" y="281" width="7.08" height="16" fill="rgb(230,154,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.internal.EntityFetchJoinedImpl.createInitializer - 1 сэмплов (0.5%)</title><rect x="866.31" y="264" width="7.08" height="16" fill="rgb(230,185,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.internal.EntityFetchJoinedImpl.createInitializer - 1 сэмплов (0.5%)</title><rect x="866.31" y="247" width="7.08" height="16" fill="rgb(230,185,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.internal.EntityFetchJoinedImpl.createInitializer - 1 сэмплов (0.5%)</title><rect x="866.31" y="230" width="7.08" height="16" fill="rgb(230,185,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.internal.EntityJoinedFetchInitializer.&lt;init&gt; - 1 сэмплов (0.5%)</title><rect x="866.31" y="213" width="7.08" height="16" fill="rgb(230,157,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.&lt;init&gt; - 1 сэмплов (0.5%)</title><rect x="866.31" y="196" width="7.08" height="16" fill="rgb(230,184,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.spi.ListResultsConsumer.consume - 54 сэмплов (27.7%)</title><rect x="873.38" y="502" width="382.15" height="16" fill="rgb(230,187,50)" rx="1"/>
+<text x="876.38" y="514">o.h.s.r.s.ListResultsConsumer.consume</text>
+</g>
+<g><title>org.hibernate.sql.results.spi.ListResultsConsumer.consume - 54 сэмплов (27.7%)</title><rect x="873.38" y="485" width="382.15" height="16" fill="rgb(230,187,50)" rx="1"/>
+<text x="876.38" y="497">o.h.s.r.s.ListResultsConsumer.consume</text>
+</g>
+<g><title>org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.next - 4 сэмплов (2.1%)</title><rect x="873.38" y="468" width="28.31" height="16" fill="rgb(230,172,50)" rx="1"/>
+<text x="876.38" y="480">o..</text>
+</g>
+<g><title>org.hibernate.sql.results.jdbc.internal.AbstractJdbcValues.next - 4 сэмплов (2.1%)</title><rect x="873.38" y="451" width="28.31" height="16" fill="rgb(230,154,50)" rx="1"/>
+<text x="876.38" y="463">o..</text>
+</g>
+<g><title>org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.processNext - 4 сэмплов (2.1%)</title><rect x="873.38" y="434" width="28.31" height="16" fill="rgb(230,150,50)" rx="1"/>
+<text x="876.38" y="446">o..</text>
+</g>
+<g><title>org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.advanceNext - 4 сэмплов (2.1%)</title><rect x="873.38" y="417" width="28.31" height="16" fill="rgb(230,158,50)" rx="1"/>
+<text x="876.38" y="429">o..</text>
+</g>
+<g><title>org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.getResultSet - 4 сэмплов (2.1%)</title><rect x="873.38" y="400" width="28.31" height="16" fill="rgb(230,173,50)" rx="1"/>
+<text x="876.38" y="412">o..</text>
+</g>
+<g><title>org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.executeQuery - 4 сэмплов (2.1%)</title><rect x="873.38" y="383" width="28.31" height="16" fill="rgb(230,156,50)" rx="1"/>
+<text x="876.38" y="395">o..</text>
+</g>
+<g><title>com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery - 2 сэмплов (1.0%)</title><rect x="873.38" y="366" width="14.15" height="16" fill="rgb(200,200,190)" rx="1"/>
+</g>
+<g><title>com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery - 2 сэмплов (1.0%)</title><rect x="873.38" y="349" width="14.15" height="16" fill="rgb(200,200,190)" rx="1"/>
+</g>
+<g><title>org.h2.jdbc.JdbcPreparedStatement.executeQuery - 2 сэмплов (1.0%)</title><rect x="873.38" y="332" width="14.15" height="16" fill="rgb(170,130,210)" rx="1"/>
+</g>
+<g><title>org.h2.command.Command.executeQuery - 2 сэмплов (1.0%)</title><rect x="873.38" y="315" width="14.15" height="16" fill="rgb(170,129,210)" rx="1"/>
+</g>
+<g><title>org.h2.command.CommandContainer.query - 1 сэмплов (0.5%)</title><rect x="873.38" y="298" width="7.08" height="16" fill="rgb(170,146,210)" rx="1"/>
+</g>
+<g><title>org.h2.command.query.Query.query - 1 сэмплов (0.5%)</title><rect x="873.38" y="281" width="7.08" height="16" fill="rgb(170,113,210)" rx="1"/>
+</g>
+<g><title>org.h2.command.query.Query.query - 1 сэмплов (0.5%)</title><rect x="873.38" y="264" width="7.08" height="16" fill="rgb(170,113,210)" rx="1"/>
+</g>
+<g><title>org.h2.command.query.Query.sameResultAsLast - 1 сэмплов (0.5%)</title><rect x="873.38" y="247" width="7.08" height="16" fill="rgb(170,126,210)" rx="1"/>
+</g>
+<g><title>org.h2.engine.SessionLocal.startStatementWithinTransaction - 1 сэмплов (0.5%)</title><rect x="880.46" y="298" width="7.08" height="16" fill="rgb(170,145,210)" rx="1"/>
+</g>
+<g><title>org.h2.command.CommandContainer.getDependencies - 1 сэмплов (0.5%)</title><rect x="880.46" y="281" width="7.08" height="16" fill="rgb(170,127,210)" rx="1"/>
+</g>
+<g><title>org.hibernate.resource.jdbc.internal.ResourceRegistryStandardImpl.register - 1 сэмплов (0.5%)</title><rect x="887.54" y="366" width="7.08" height="16" fill="rgb(230,159,50)" rx="1"/>
+</g>
+<g><title>org.jboss.logging.DelegatingBasicLogger.tracef - 1 сэмплов (0.5%)</title><rect x="887.54" y="349" width="7.08" height="16" fill="rgb(203,203,190)" rx="1"/>
+</g>
+<g><title>org.jboss.logging.Logger.logf - 1 сэмплов (0.5%)</title><rect x="887.54" y="332" width="7.08" height="16" fill="rgb(215,215,190)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.jdbc.internal.DeferredResultSetAccess.bindParameters - 1 сэмплов (0.5%)</title><rect x="894.62" y="366" width="7.08" height="16" fill="rgb(230,166,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.internal.StandardRowReader.readRow - 50 сэмплов (25.6%)</title><rect x="901.69" y="468" width="353.85" height="16" fill="rgb(230,163,50)" rx="1"/>
+<text x="904.69" y="480">o.h.s.r.i.StandardRowReader.readRow</text>
+</g>
+<g><title>org.hibernate.sql.results.internal.StandardRowReader.coordinateInitializers - 50 сэмплов (25.6%)</title><rect x="901.69" y="451" width="353.85" height="16" fill="rgb(230,187,50)" rx="1"/>
+<text x="904.69" y="463">o.h.s.r.i.StandardRowReader.coordinateInitializers</text>
+</g>
+<g><title>org.hibernate.sql.results.internal.InitializersList.initializeInstance - 14 сэмплов (7.2%)</title><rect x="901.69" y="434" width="99.08" height="16" fill="rgb(230,165,50)" rx="1"/>
+<text x="904.69" y="446">o.h.s.r.i.In..</text>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeInstance - 14 сэмплов (7.2%)</title><rect x="901.69" y="417" width="99.08" height="16" fill="rgb(230,180,50)" rx="1"/>
+<text x="904.69" y="429">o.h.s.r.g.e...</text>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeEntity - 14 сэмплов (7.2%)</title><rect x="901.69" y="400" width="99.08" height="16" fill="rgb(230,151,50)" rx="1"/>
+<text x="904.69" y="412">o.h.s.r.g.e...</text>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeEntityInstance - 14 сэмплов (7.2%)</title><rect x="901.69" y="383" width="99.08" height="16" fill="rgb(230,178,50)" rx="1"/>
+<text x="904.69" y="395">o.h.s.r.g.e...</text>
+</g>
+<g><title>org.hibernate.engine.internal.StatefulPersistenceContext.addEntity - 1 сэмплов (0.5%)</title><rect x="901.69" y="366" width="7.08" height="16" fill="rgb(230,153,50)" rx="1"/>
+</g>
+<g><title>java.util.HashMap.putIfAbsent - 1 сэмплов (0.5%)</title><rect x="901.69" y="349" width="7.08" height="16" fill="rgb(216,216,190)" rx="1"/>
+</g>
+<g><title>java.util.HashMap.putVal - 1 сэмплов (0.5%)</title><rect x="901.69" y="332" width="7.08" height="16" fill="rgb(216,216,190)" rx="1"/>
+</g>
+<g><title>org.hibernate.persister.entity.AbstractEntityPersister.setPropertyValues - 2 сэмплов (1.0%)</title><rect x="908.77" y="366" width="14.15" height="16" fill="rgb(230,170,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.extractConcreteTypeStateValues - 8 сэмплов (4.1%)</title><rect x="922.92" y="366" width="56.62" height="16" fill="rgb(230,182,50)" rx="1"/>
+<text x="925.92" y="378">o.h.s...</text>
+</g>
+<g><title>org.hibernate.sql.results.graph.DomainResultAssembler.assemble - 7 сэмплов (3.6%)</title><rect x="922.92" y="349" width="49.54" height="16" fill="rgb(230,183,50)" rx="1"/>
+<text x="925.92" y="361">o.h.s..</text>
+</g>
+<g><title>org.hibernate.sql.results.graph.basic.BasicResultAssembler.assemble - 7 сэмплов (3.6%)</title><rect x="922.92" y="332" width="49.54" height="16" fill="rgb(230,169,50)" rx="1"/>
+<text x="925.92" y="344">o.h.s..</text>
+</g>
+<g><title>java.lang.String.format - 1 сэмплов (0.5%)</title><rect x="922.92" y="315" width="7.08" height="16" fill="rgb(209,209,190)" rx="1"/>
+</g>
+<g><title>java.util.Formatter.toString - 1 сэмплов (0.5%)</title><rect x="922.92" y="298" width="7.08" height="16" fill="rgb(205,205,190)" rx="1"/>
+</g>
+<g><title>java.util.Formatter.ensureOpen - 1 сэмплов (0.5%)</title><rect x="922.92" y="281" width="7.08" height="16" fill="rgb(217,217,190)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.basic.BasicResultAssembler.extractRawValue - 6 сэмплов (3.1%)</title><rect x="930.00" y="315" width="42.46" height="16" fill="rgb(230,182,50)" rx="1"/>
+<text x="933.00" y="327">o.h..</text>
+</g>
+<g><title>org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.getJdbcValue - 6 сэмплов (3.1%)</title><rect x="930.00" y="298" width="42.46" height="16" fill="rgb(230,156,50)" rx="1"/>
+<text x="933.00" y="310">o.h..</text>
+</g>
+<g><title>org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.getCurrentRowValue - 6 сэмплов (3.1%)</title><rect x="930.00" y="281" width="42.46" height="16" fill="rgb(230,161,50)" rx="1"/>
+<text x="933.00" y="293">o.h..</text>
+</g>
+<g><title>java.util.BitSet.get - 1 сэмплов (0.5%)</title><rect x="930.00" y="264" width="7.08" height="16" fill="rgb(216,216,190)" rx="1"/>
+</g>
+<g><title>java.lang.StringBuilder.toString - 1 сэмплов (0.5%)</title><rect x="930.00" y="247" width="7.08" height="16" fill="rgb(206,206,190)" rx="1"/>
+</g>
+<g><title>org.hibernate.type.descriptor.jdbc.BasicExtractor.extract - 5 сэмплов (2.6%)</title><rect x="937.08" y="264" width="35.38" height="16" fill="rgb(230,164,50)" rx="1"/>
+<text x="940.08" y="276">o...</text>
+</g>
+<g><title>com.zaxxer.hikari.pool.HikariProxyResultSet.wasNull - 2 сэмплов (1.0%)</title><rect x="937.08" y="247" width="14.15" height="16" fill="rgb(209,209,190)" rx="1"/>
+</g>
+<g><title>org.h2.jdbc.JdbcResultSet.wasNull - 2 сэмплов (1.0%)</title><rect x="937.08" y="230" width="14.15" height="16" fill="rgb(170,120,210)" rx="1"/>
+</g>
+<g><title>org.h2.message.TraceObject.debugCodeCall - 1 сэмплов (0.5%)</title><rect x="937.08" y="213" width="7.08" height="16" fill="rgb(170,121,210)" rx="1"/>
+</g>
+<g><title>org.h2.message.Trace.isDebugEnabled - 1 сэмплов (0.5%)</title><rect x="937.08" y="196" width="7.08" height="16" fill="rgb(170,124,210)" rx="1"/>
+</g>
+<g><title>org.hibernate.type.descriptor.jdbc.TimestampJdbcType$2.doExtract - 3 сэмплов (1.5%)</title><rect x="951.23" y="247" width="21.23" height="16" fill="rgb(230,175,50)" rx="1"/>
+</g>
+<g><title>com.zaxxer.hikari.pool.HikariProxyResultSet.getTimestamp - 3 сэмплов (1.5%)</title><rect x="951.23" y="230" width="21.23" height="16" fill="rgb(212,212,190)" rx="1"/>
+</g>
+<g><title>org.h2.jdbc.JdbcResultSet.getTimestamp - 3 сэмплов (1.5%)</title><rect x="951.23" y="213" width="21.23" height="16" fill="rgb(170,111,210)" rx="1"/>
+</g>
+<g><title>org.h2.jdbc.JdbcResultSet.get - 1 сэмплов (0.5%)</title><rect x="951.23" y="196" width="7.08" height="16" fill="rgb(170,125,210)" rx="1"/>
+</g>
+<g><title>org.h2.jdbc.JdbcResultSet.getInternal - 1 сэмплов (0.5%)</title><rect x="951.23" y="179" width="7.08" height="16" fill="rgb(170,131,210)" rx="1"/>
+</g>
+<g><title>org.h2.jdbc.JdbcResultSet.checkOnValidRow - 1 сэмплов (0.5%)</title><rect x="951.23" y="162" width="7.08" height="16" fill="rgb(170,120,210)" rx="1"/>
+</g>
+<g><title>org.h2.util.LegacyDateTimeUtils.toTimestamp - 2 сэмплов (1.0%)</title><rect x="958.31" y="196" width="14.15" height="16" fill="rgb(170,131,210)" rx="1"/>
+</g>
+<g><title>org.h2.util.LegacyDateTimeUtils.getMillis - 2 сэмплов (1.0%)</title><rect x="958.31" y="179" width="14.15" height="16" fill="rgb(170,112,210)" rx="1"/>
+</g>
+<g><title>org.h2.util.TimeZoneProvider$WithTimeZone.getEpochSecondsFromLocal - 2 сэмплов (1.0%)</title><rect x="958.31" y="162" width="14.15" height="16" fill="rgb(170,142,210)" rx="1"/>
+</g>
+<g><title>java.time.OffsetDateTime.toEpochSecond - 1 сэмплов (0.5%)</title><rect x="958.31" y="145" width="7.08" height="16" fill="rgb(206,206,190)" rx="1"/>
+</g>
+<g><title>java.time.chrono.ChronoLocalDateTime.toEpochSecond - 1 сэмплов (0.5%)</title><rect x="958.31" y="128" width="7.08" height="16" fill="rgb(219,219,190)" rx="1"/>
+</g>
+<g><title>java.time.ZonedDateTime.of - 1 сэмплов (0.5%)</title><rect x="965.38" y="145" width="7.08" height="16" fill="rgb(203,203,190)" rx="1"/>
+</g>
+<g><title>java.time.ZonedDateTime.ofLocal - 1 сэмплов (0.5%)</title><rect x="965.38" y="128" width="7.08" height="16" fill="rgb(201,201,190)" rx="1"/>
+</g>
+<g><title>java.time.zone.ZoneRules.getValidOffsets - 1 сэмплов (0.5%)</title><rect x="965.38" y="111" width="7.08" height="16" fill="rgb(200,200,190)" rx="1"/>
+</g>
+<g><title>java.time.zone.ZoneRules.getOffsetInfo - 1 сэмплов (0.5%)</title><rect x="965.38" y="94" width="7.08" height="16" fill="rgb(208,208,190)" rx="1"/>
+</g>
+<g><title>java.util.Arrays.binarySearch - 1 сэмплов (0.5%)</title><rect x="965.38" y="77" width="7.08" height="16" fill="rgb(200,200,190)" rx="1"/>
+</g>
+<g><title>java.util.Arrays.binarySearch0 - 1 сэмплов (0.5%)</title><rect x="965.38" y="60" width="7.08" height="16" fill="rgb(202,202,190)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.preLoad - 3 сэмплов (1.5%)</title><rect x="979.54" y="366" width="21.23" height="16" fill="rgb(230,170,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener - 1 сэмплов (0.5%)</title><rect x="979.54" y="349" width="7.08" height="16" fill="rgb(230,183,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.internal.InitializersList.resolveInstances - 24 сэмплов (12.3%)</title><rect x="1000.77" y="434" width="169.85" height="16" fill="rgb(230,155,50)" rx="1"/>
+<text x="1003.77" y="446">o.h.s.r.i.InitializersL..</text>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveInstance - 23 сэмплов (11.8%)</title><rect x="1000.77" y="417" width="162.77" height="16" fill="rgb(230,165,50)" rx="1"/>
+<text x="1003.77" y="429">o.h.s.r.g.e.AbstractEn..</text>
+</g>
+<g><title>org.hibernate.engine.internal.StatefulPersistenceContext.claimEntityHolderIfPossible - 15 сэмплов (7.7%)</title><rect x="1000.77" y="400" width="106.15" height="16" fill="rgb(230,180,50)" rx="1"/>
+<text x="1003.77" y="412">o.h.e.i.State..</text>
+</g>
+<g><title>java.util.HashMap.putIfAbsent - 13 сэмплов (6.7%)</title><rect x="1000.77" y="383" width="92.00" height="16" fill="rgb(216,216,190)" rx="1"/>
+<text x="1003.77" y="395">j.u.HashMap..</text>
+</g>
+<g><title>java.util.HashMap.putVal - 13 сэмплов (6.7%)</title><rect x="1000.77" y="366" width="92.00" height="16" fill="rgb(216,216,190)" rx="1"/>
+<text x="1003.77" y="378">j.u.HashMap..</text>
+</g>
+<g><title>java.util.HashMap.resize - 12 сэмплов (6.2%)</title><rect x="1000.77" y="349" width="84.92" height="16" fill="rgb(217,217,190)" rx="1"/>
+<text x="1003.77" y="361">j.u.HashMa..</text>
+</g>
+<g><title>org.hibernate.engine.internal.StatefulPersistenceContext.getOrInitializeEntitiesByKey - 1 сэмплов (0.5%)</title><rect x="1092.77" y="383" width="7.08" height="16" fill="rgb(230,161,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.internal.util.collections.CollectionHelper.mapOfSize - 1 сэмплов (0.5%)</title><rect x="1092.77" y="366" width="7.08" height="16" fill="rgb(230,173,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveEntityInstance - 7 сэмплов (3.6%)</title><rect x="1106.92" y="400" width="49.54" height="16" fill="rgb(230,156,50)" rx="1"/>
+<text x="1109.92" y="412">o.h.s..</text>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.isProxyInstance - 1 сэмплов (0.5%)</title><rect x="1106.92" y="383" width="7.08" height="16" fill="rgb(230,152,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveInstance - 5 сэмплов (2.6%)</title><rect x="1114.00" y="383" width="35.38" height="16" fill="rgb(230,165,50)" rx="1"/>
+<text x="1117.00" y="395">o...</text>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveEntityInstance - 5 сэмплов (2.6%)</title><rect x="1114.00" y="366" width="35.38" height="16" fill="rgb(230,156,50)" rx="1"/>
+<text x="1117.00" y="378">o...</text>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.instantiateEntity - 4 сэмплов (2.1%)</title><rect x="1114.00" y="349" width="28.31" height="16" fill="rgb(230,182,50)" rx="1"/>
+<text x="1117.00" y="361">o..</text>
+</g>
+<g><title>org.hibernate.internal.SessionImpl.instantiate - 3 сэмплов (1.5%)</title><rect x="1114.00" y="332" width="21.23" height="16" fill="rgb(230,185,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.internal.SessionImpl.checkOpenOrWaitingForAutoClose - 1 сэмплов (0.5%)</title><rect x="1114.00" y="315" width="7.08" height="16" fill="rgb(230,164,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.internal.AbstractSharedSessionContract.checkOpenOrWaitingForAutoClose - 1 сэмплов (0.5%)</title><rect x="1114.00" y="298" width="7.08" height="16" fill="rgb(230,183,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.engine.spi.SharedSessionContractImplementor.checkOpen - 1 сэмплов (0.5%)</title><rect x="1114.00" y="281" width="7.08" height="16" fill="rgb(230,179,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.persister.entity.AbstractEntityPersister.instantiate - 1 сэмплов (0.5%)</title><rect x="1121.08" y="315" width="7.08" height="16" fill="rgb(230,179,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.metamodel.internal.EntityInstantiatorPojoStandard.instantiate - 1 сэмплов (0.5%)</title><rect x="1121.08" y="298" width="7.08" height="16" fill="rgb(230,171,50)" rx="1"/>
+</g>
+<g><title>java.lang.reflect.Constructor.newInstance - 1 сэмплов (0.5%)</title><rect x="1121.08" y="281" width="7.08" height="16" fill="rgb(209,209,190)" rx="1"/>
+</g>
+<g><title>java.lang.reflect.Constructor.newInstanceWithCaller - 1 сэмплов (0.5%)</title><rect x="1121.08" y="264" width="7.08" height="16" fill="rgb(216,216,190)" rx="1"/>
+</g>
+<g><title>jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance - 1 сэмплов (0.5%)</title><rect x="1121.08" y="247" width="7.08" height="16" fill="rgb(210,210,190)" rx="1"/>
+</g>
+<g><title>jdk.internal.reflect.DirectConstructorHandleAccessor.invokeImpl - 1 сэмплов (0.5%)</title><rect x="1121.08" y="230" width="7.08" height="16" fill="rgb(210,210,190)" rx="1"/>
+</g>
+<g><title>java.lang.invoke.Invokers$Holder.invokeExact_MT - 1 сэмплов (0.5%)</title><rect x="1121.08" y="213" width="7.08" height="16" fill="rgb(200,200,190)" rx="1"/>
+</g>
+<g><title>java.lang.invoke.Invokers.checkCustomized - 1 сэмплов (0.5%)</title><rect x="1121.08" y="196" width="7.08" height="16" fill="rgb(214,214,190)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveInstanceFromCache - 1 сэмплов (0.5%)</title><rect x="1142.31" y="349" width="7.08" height="16" fill="rgb(230,158,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.upgradeLockMode - 1 сэмплов (0.5%)</title><rect x="1149.38" y="383" width="7.08" height="16" fill="rgb(230,188,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.upgradeLocks - 1 сэмплов (0.5%)</title><rect x="1149.38" y="366" width="7.08" height="16" fill="rgb(230,155,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.internal.InitializersList.resolveKeys - 12 сэмплов (6.2%)</title><rect x="1170.62" y="434" width="84.92" height="16" fill="rgb(230,168,50)" rx="1"/>
+<text x="1173.62" y="446">o.h.s.r.i...</text>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.internal.EntityJoinedFetchInitializer.resolveKey - 12 сэмплов (6.2%)</title><rect x="1170.62" y="417" width="84.92" height="16" fill="rgb(230,176,50)" rx="1"/>
+<text x="1173.62" y="429">o.h.s.r.g...</text>
+</g>
+<g><title>org.hibernate.sql.results.graph.DomainResultAssembler.assemble - 3 сэмплов (1.5%)</title><rect x="1170.62" y="400" width="21.23" height="16" fill="rgb(230,183,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.basic.BasicResultAssembler.assemble - 3 сэмплов (1.5%)</title><rect x="1170.62" y="383" width="21.23" height="16" fill="rgb(230,169,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.basic.BasicResultAssembler.extractRawValue - 3 сэмплов (1.5%)</title><rect x="1170.62" y="366" width="21.23" height="16" fill="rgb(230,182,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.getJdbcValue - 3 сэмплов (1.5%)</title><rect x="1170.62" y="349" width="21.23" height="16" fill="rgb(230,156,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.getCurrentRowValue - 2 сэмплов (1.0%)</title><rect x="1170.62" y="332" width="14.15" height="16" fill="rgb(230,161,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.type.descriptor.jdbc.BasicExtractor.extract - 1 сэмплов (0.5%)</title><rect x="1170.62" y="315" width="7.08" height="16" fill="rgb(230,164,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.type.descriptor.jdbc.BigIntJdbcType$2.doExtract - 1 сэмплов (0.5%)</title><rect x="1170.62" y="298" width="7.08" height="16" fill="rgb(230,157,50)" rx="1"/>
+</g>
+<g><title>com.zaxxer.hikari.pool.HikariProxyResultSet.getLong - 1 сэмплов (0.5%)</title><rect x="1170.62" y="281" width="7.08" height="16" fill="rgb(210,210,190)" rx="1"/>
+</g>
+<g><title>org.h2.jdbc.JdbcResultSet.getLong - 1 сэмплов (0.5%)</title><rect x="1170.62" y="264" width="7.08" height="16" fill="rgb(170,115,210)" rx="1"/>
+</g>
+<g><title>org.h2.message.TraceObject.debugCodeCall - 1 сэмплов (0.5%)</title><rect x="1170.62" y="247" width="7.08" height="16" fill="rgb(170,121,210)" rx="1"/>
+</g>
+<g><title>org.h2.message.Trace.isDebugEnabled - 1 сэмплов (0.5%)</title><rect x="1170.62" y="230" width="7.08" height="16" fill="rgb(170,124,210)" rx="1"/>
+</g>
+<g><title>org.h2.message.Trace.isEnabled - 1 сэмплов (0.5%)</title><rect x="1170.62" y="213" width="7.08" height="16" fill="rgb(170,147,210)" rx="1"/>
+</g>
+<g><title>org.h2.message.TraceSystem.isEnabled - 1 сэмплов (0.5%)</title><rect x="1170.62" y="196" width="7.08" height="16" fill="rgb(170,123,210)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.FetchParentAccess.shouldSkipInitializer - 6 сэмплов (3.1%)</title><rect x="1191.85" y="400" width="42.46" height="16" fill="rgb(230,159,50)" rx="1"/>
+<text x="1194.85" y="412">o.h..</text>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveKey - 6 сэмплов (3.1%)</title><rect x="1191.85" y="383" width="42.46" height="16" fill="rgb(230,164,50)" rx="1"/>
+<text x="1194.85" y="395">o.h..</text>
+</g>
+<g><title>org.hibernate.engine.spi.EntityKey.&lt;init&gt; - 2 сэмплов (1.0%)</title><rect x="1191.85" y="366" width="14.15" height="16" fill="rgb(230,150,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeIdentifier - 3 сэмплов (1.5%)</title><rect x="1206.00" y="366" width="21.23" height="16" fill="rgb(230,151,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.basic.BasicResultAssembler.assemble - 3 сэмплов (1.5%)</title><rect x="1206.00" y="349" width="21.23" height="16" fill="rgb(230,169,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.basic.BasicResultAssembler.extractRawValue - 3 сэмплов (1.5%)</title><rect x="1206.00" y="332" width="21.23" height="16" fill="rgb(230,182,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.getJdbcValue - 3 сэмплов (1.5%)</title><rect x="1206.00" y="315" width="21.23" height="16" fill="rgb(230,156,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.getCurrentRowValue - 3 сэмплов (1.5%)</title><rect x="1206.00" y="298" width="21.23" height="16" fill="rgb(230,161,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.type.descriptor.jdbc.BasicExtractor.extract - 3 сэмплов (1.5%)</title><rect x="1206.00" y="281" width="21.23" height="16" fill="rgb(230,164,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.type.descriptor.jdbc.BigIntJdbcType$2.doExtract - 2 сэмплов (1.0%)</title><rect x="1206.00" y="264" width="14.15" height="16" fill="rgb(230,157,50)" rx="1"/>
+</g>
+<g><title>com.zaxxer.hikari.pool.HikariProxyResultSet.getLong - 2 сэмплов (1.0%)</title><rect x="1206.00" y="247" width="14.15" height="16" fill="rgb(210,210,190)" rx="1"/>
+</g>
+<g><title>org.h2.jdbc.JdbcResultSet.getLong - 2 сэмплов (1.0%)</title><rect x="1206.00" y="230" width="14.15" height="16" fill="rgb(170,115,210)" rx="1"/>
+</g>
+<g><title>org.h2.jdbc.JdbcResultSet.getLongInternal - 1 сэмплов (0.5%)</title><rect x="1206.00" y="213" width="7.08" height="16" fill="rgb(170,149,210)" rx="1"/>
+</g>
+<g><title>org.h2.jdbc.JdbcResultSet.getInternal - 1 сэмплов (0.5%)</title><rect x="1206.00" y="196" width="7.08" height="16" fill="rgb(170,131,210)" rx="1"/>
+</g>
+<g><title>org.h2.jdbc.JdbcResultSet.checkOnValidRow - 1 сэмплов (0.5%)</title><rect x="1206.00" y="179" width="7.08" height="16" fill="rgb(170,120,210)" rx="1"/>
+</g>
+<g><title>org.h2.jdbc.JdbcResultSet.isOnValidRow - 1 сэмплов (0.5%)</title><rect x="1206.00" y="162" width="7.08" height="16" fill="rgb(170,115,210)" rx="1"/>
+</g>
+<g><title>org.h2.message.TraceObject.debugCodeCall - 1 сэмплов (0.5%)</title><rect x="1213.08" y="213" width="7.08" height="16" fill="rgb(170,121,210)" rx="1"/>
+</g>
+<g><title>org.h2.message.Trace.isDebugEnabled - 1 сэмплов (0.5%)</title><rect x="1213.08" y="196" width="7.08" height="16" fill="rgb(170,124,210)" rx="1"/>
+</g>
+<g><title>org.h2.message.Trace.isEnabled - 1 сэмплов (0.5%)</title><rect x="1213.08" y="179" width="7.08" height="16" fill="rgb(170,147,210)" rx="1"/>
+</g>
+<g><title>org.h2.message.TraceSystem.isEnabled - 1 сэмплов (0.5%)</title><rect x="1213.08" y="162" width="7.08" height="16" fill="rgb(170,123,210)" rx="1"/>
+</g>
+<g><title>org.jboss.logging.Logger.isTraceEnabled - 1 сэмплов (0.5%)</title><rect x="1220.15" y="264" width="7.08" height="16" fill="rgb(216,216,190)" rx="1"/>
+</g>
+<g><title>org.jboss.logging.Slf4jLocationAwareLogger.isEnabled - 1 сэмплов (0.5%)</title><rect x="1220.15" y="247" width="7.08" height="16" fill="rgb(217,217,190)" rx="1"/>
+</g>
+<g><title>ch.qos.logback.classic.Logger.isTraceEnabled - 1 сэмплов (0.5%)</title><rect x="1220.15" y="230" width="7.08" height="16" fill="rgb(203,203,190)" rx="1"/>
+</g>
+<g><title>org.jboss.logging.Logger.isDebugEnabled - 1 сэмплов (0.5%)</title><rect x="1227.23" y="366" width="7.08" height="16" fill="rgb(204,204,190)" rx="1"/>
+</g>
+<g><title>org.jboss.logging.Slf4jLocationAwareLogger.isEnabled - 1 сэмплов (0.5%)</title><rect x="1227.23" y="349" width="7.08" height="16" fill="rgb(217,217,190)" rx="1"/>
+</g>
+<g><title>ch.qos.logback.classic.Logger.isTraceEnabled - 1 сэмплов (0.5%)</title><rect x="1227.23" y="332" width="7.08" height="16" fill="rgb(203,203,190)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.resolveKey - 3 сэмплов (1.5%)</title><rect x="1234.31" y="400" width="21.23" height="16" fill="rgb(230,164,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.entity.AbstractEntityInitializer.initializeIdentifier - 2 сэмплов (1.0%)</title><rect x="1234.31" y="383" width="14.15" height="16" fill="rgb(230,151,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.basic.BasicResultAssembler.assemble - 2 сэмплов (1.0%)</title><rect x="1234.31" y="366" width="14.15" height="16" fill="rgb(230,169,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.graph.basic.BasicResultAssembler.extractRawValue - 2 сэмплов (1.0%)</title><rect x="1234.31" y="349" width="14.15" height="16" fill="rgb(230,182,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.internal.RowProcessingStateStandardImpl.getJdbcValue - 2 сэмплов (1.0%)</title><rect x="1234.31" y="332" width="14.15" height="16" fill="rgb(230,156,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.sql.results.jdbc.internal.JdbcValuesResultSetImpl.getCurrentRowValue - 2 сэмплов (1.0%)</title><rect x="1234.31" y="315" width="14.15" height="16" fill="rgb(230,161,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.type.descriptor.jdbc.BasicExtractor.extract - 2 сэмплов (1.0%)</title><rect x="1234.31" y="298" width="14.15" height="16" fill="rgb(230,164,50)" rx="1"/>
+</g>
+<g><title>org.jboss.logging.Logger.isTraceEnabled - 2 сэмплов (1.0%)</title><rect x="1234.31" y="281" width="14.15" height="16" fill="rgb(216,216,190)" rx="1"/>
+</g>
+<g><title>org.jboss.logging.Slf4jLocationAwareLogger.isEnabled - 2 сэмплов (1.0%)</title><rect x="1234.31" y="264" width="14.15" height="16" fill="rgb(217,217,190)" rx="1"/>
+</g>
+<g><title>ch.qos.logback.classic.Logger.isTraceEnabled - 2 сэмплов (1.0%)</title><rect x="1234.31" y="247" width="14.15" height="16" fill="rgb(203,203,190)" rx="1"/>
+</g>
+<g><title>ch.qos.logback.classic.Logger.isTraceEnabled - 1 сэмплов (0.5%)</title><rect x="1234.31" y="230" width="7.08" height="16" fill="rgb(203,203,190)" rx="1"/>
+</g>
+<g><title>ch.qos.logback.classic.Logger.callTurboFilters - 1 сэмплов (0.5%)</title><rect x="1234.31" y="213" width="7.08" height="16" fill="rgb(218,218,190)" rx="1"/>
+</g>
+<g><title>ch.qos.logback.classic.LoggerContext.getTurboFilterChainDecision_0_3OrMore - 1 сэмплов (0.5%)</title><rect x="1234.31" y="196" width="7.08" height="16" fill="rgb(201,201,190)" rx="1"/>
+</g>
+<g><title>org.springframework.data.jpa.repository.query.AbstractJpaQuery.createQuery - 1 сэмплов (0.5%)</title><rect x="1255.54" y="689" width="7.08" height="16" fill="rgb(157,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.data.jpa.repository.query.AbstractStringBasedJpaQuery.doCreateQuery - 1 сэмплов (0.5%)</title><rect x="1255.54" y="672" width="7.08" height="16" fill="rgb(122,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.data.jpa.repository.query.AbstractStringBasedJpaQuery.createJpaQuery - 1 сэмплов (0.5%)</title><rect x="1255.54" y="655" width="7.08" height="16" fill="rgb(157,200,80)" rx="1"/>
+</g>
+<g><title>jdk.proxy2.$Proxy131.createQuery - 1 сэмплов (0.5%)</title><rect x="1255.54" y="638" width="7.08" height="16" fill="rgb(215,215,190)" rx="1"/>
+</g>
+<g><title>org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke - 1 сэмплов (0.5%)</title><rect x="1255.54" y="621" width="7.08" height="16" fill="rgb(149,200,80)" rx="1"/>
+</g>
+<g><title>java.lang.reflect.Method.invoke - 1 сэмплов (0.5%)</title><rect x="1255.54" y="604" width="7.08" height="16" fill="rgb(205,205,190)" rx="1"/>
+</g>
+<g><title>jdk.internal.reflect.DirectMethodHandleAccessor.invoke - 1 сэмплов (0.5%)</title><rect x="1255.54" y="587" width="7.08" height="16" fill="rgb(210,210,190)" rx="1"/>
+</g>
+<g><title>jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl - 1 сэмплов (0.5%)</title><rect x="1255.54" y="570" width="7.08" height="16" fill="rgb(214,214,190)" rx="1"/>
+</g>
+<g><title>java.lang.invoke.Invokers$Holder.invokeExact_MT - 1 сэмплов (0.5%)</title><rect x="1255.54" y="553" width="7.08" height="16" fill="rgb(200,200,190)" rx="1"/>
+</g>
+<g><title>java.lang.invoke.LambdaForm$MH+0x00001c0001a99c00.226029283.invoke - 1 сэмплов (0.5%)</title><rect x="1255.54" y="536" width="7.08" height="16" fill="rgb(217,217,190)" rx="1"/>
+</g>
+<g><title>java.lang.invoke.LambdaForm$DMH+0x00001c0001104400.1541525668.invokeInterface - 1 сэмплов (0.5%)</title><rect x="1255.54" y="519" width="7.08" height="16" fill="rgb(207,207,190)" rx="1"/>
+</g>
+<g><title>org.hibernate.internal.AbstractSharedSessionContract.createQuery - 1 сэмплов (0.5%)</title><rect x="1255.54" y="502" width="7.08" height="16" fill="rgb(230,169,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.internal.AbstractSharedSessionContract.createQuery - 1 сэмплов (0.5%)</title><rect x="1255.54" y="485" width="7.08" height="16" fill="rgb(230,169,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.internal.AbstractSharedSessionContract.createQuery - 1 сэмплов (0.5%)</title><rect x="1255.54" y="468" width="7.08" height="16" fill="rgb(230,169,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.query.sqm.internal.QuerySqmImpl.&lt;init&gt; - 1 сэмплов (0.5%)</title><rect x="1255.54" y="451" width="7.08" height="16" fill="rgb(230,188,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.query.spi.SimpleHqlInterpretationImpl.getDomainParameterXref - 1 сэмплов (0.5%)</title><rect x="1255.54" y="434" width="7.08" height="16" fill="rgb(230,185,50)" rx="1"/>
+</g>
+<g><title>org.hibernate.query.sqm.internal.DomainParameterXref.copy - 1 сэмплов (0.5%)</title><rect x="1255.54" y="417" width="7.08" height="16" fill="rgb(230,182,50)" rx="1"/>
+</g>
+<g><title>java.util.IdentityHashMap.&lt;init&gt; - 1 сэмплов (0.5%)</title><rect x="1255.54" y="400" width="7.08" height="16" fill="rgb(207,207,190)" rx="1"/>
+</g>
+<g><title>java.util.IdentityHashMap.putAll - 1 сэмплов (0.5%)</title><rect x="1255.54" y="383" width="7.08" height="16" fill="rgb(200,200,190)" rx="1"/>
+</g>
+<g><title>messages.service.MessageDto.from - 3 сэмплов (1.5%)</title><rect x="1269.69" y="1097" width="21.23" height="16" fill="rgb(60,155,230)" rx="1"/>
+</g>
+<g><title>jdk.internal.reflect.DirectMethodHandleAccessor.checkReceiver - 1 сэмплов (0.5%)</title><rect x="1333.38" y="1148" width="7.08" height="16" fill="rgb(216,216,190)" rx="1"/>
+</g>
+<g><title>java.lang.Class.isAssignableFrom - 1 сэмплов (0.5%)</title><rect x="1333.38" y="1131" width="7.08" height="16" fill="rgb(202,202,190)" rx="1"/>
+</g>
+<g><title>java.util.ArrayList$Itr.next - 1 сэмплов (0.5%)</title><rect x="1333.38" y="1114" width="7.08" height="16" fill="rgb(210,210,190)" rx="1"/>
+</g>
+<g><title>org.springframework.web.servlet.FrameworkServlet.publishRequestHandledEvent - 2 сэмплов (1.0%)</title><rect x="1340.46" y="1658" width="14.15" height="16" fill="rgb(158,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.context.support.ServletRequestHandledEvent.&lt;init&gt; - 2 сэмплов (1.0%)</title><rect x="1340.46" y="1641" width="14.15" height="16" fill="rgb(146,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.context.support.RequestHandledEvent.&lt;init&gt; - 2 сэмплов (1.0%)</title><rect x="1340.46" y="1624" width="14.15" height="16" fill="rgb(142,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.web.context.support.RequestHandledEvent.&lt;init&gt; - 2 сэмплов (1.0%)</title><rect x="1340.46" y="1607" width="14.15" height="16" fill="rgb(142,200,80)" rx="1"/>
+</g>
+<g><title>org.springframework.context.ApplicationEvent.&lt;init&gt; - 2 сэмплов (1.0%)</title><rect x="1340.46" y="1590" width="14.15" height="16" fill="rgb(143,200,80)" rx="1"/>
+</g>
+<g><title>java.util.EventObject.&lt;init&gt; - 2 сэмплов (1.0%)</title><rect x="1340.46" y="1573" width="14.15" height="16" fill="rgb(204,204,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.core.ApplicationFilterFactory.createFilterChain - 2 сэмплов (1.0%)</title><rect x="1354.62" y="2032" width="14.15" height="16" fill="rgb(218,218,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.core.ApplicationFilterFactory.matchFiltersServlet - 1 сэмплов (0.5%)</title><rect x="1354.62" y="2015" width="7.08" height="16" fill="rgb(217,217,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.core.StandardContext.fireRequestInitEvent - 1 сэмплов (0.5%)</title><rect x="1368.77" y="2083" width="7.08" height="16" fill="rgb(216,216,190)" rx="1"/>
+</g>
+<g><title>org.apache.catalina.core.StandardContext.getApplicationEventListeners - 1 сэмплов (0.5%)</title><rect x="1368.77" y="2066" width="7.08" height="16" fill="rgb(201,201,190)" rx="1"/>
+</g>
+</svg>
