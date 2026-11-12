@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.Map;
 
 @RestController
 @RequestMapping("/api/messages")
@@ -31,10 +30,10 @@ public class MessageController {
      * Принимает массив сообщений: [{"author": "user1", "text": "привет"}, ...]
      */
     @PostMapping
-    public ResponseEntity<Map<String, Object>> create(@RequestBody List<NewMessage> messages) {
+    public ResponseEntity<SaveResult> create(@RequestBody List<NewMessage> messages) {
         int saved = messageService.saveAll(messages);
         return ResponseEntity.status(HttpStatus.CREATED)
-                .body(Map.of("saved", saved, "total", messageService.count()));
+                .body(new SaveResult(saved, messageService.count()));
     }
 
     @GetMapping("/nplus1")
@@ -58,13 +57,13 @@ public class MessageController {
     }
 
     @ExceptionHandler(IllegalArgumentException.class)
-    public ResponseEntity<Map<String, String>> badRequest(IllegalArgumentException e) {
-        return ResponseEntity.badRequest().body(Map.of("error", e.getMessage()));
+    public ResponseEntity<ErrorResponse> badRequest(IllegalArgumentException e) {
+        return ResponseEntity.badRequest().body(new ErrorResponse("BadRequest", e.getMessage()));
     }
 
     @ExceptionHandler(LazyInitializationException.class)
-    public ResponseEntity<Map<String, String>> lazy(LazyInitializationException e) {
+    public ResponseEntity<ErrorResponse> lazy(LazyInitializationException e) {
         return ResponseEntity.internalServerError()
-                .body(Map.of("error", e.getClass().getSimpleName(), "message", e.getMessage()));
+                .body(new ErrorResponse(e.getClass().getSimpleName(), e.getMessage()));
     }
 }
