@@ -20,7 +20,8 @@ HTTP-запроса и ленивая ошибка не воспроизводи
 
 ## Требования
 
-JDK 17 или новее (проверялось на 23). Gradle ставить не нужно - он скачается через wrapper.
+JDK 17 или новее (проверялось на 23). Gradle ставить не нужно - wrapper скачает Gradle 9.1,
+который запускается на JDK 17-25.
 Для задачи заполнения базы нужен `curl` (в macOS, Linux и Windows 10+ он есть).
 
 ## Задание 1. Сборка Gradle
@@ -49,7 +50,7 @@ JDK 17 или новее (проверялось на 23). Gradle ставить
 ./gradlew runTestDataInitializer -Pmessages=2000 -Pauthors=200
 ```
 
-Ответ: `{"total":2000,"saved":2000}`. Проверка:
+Ответ: `{"saved":2000,"total":2000}`. Проверка:
 
 ```bash
 curl http://localhost:8080/api/messages/5
@@ -57,7 +58,7 @@ curl http://localhost:8080/api/messages/5/fail
 ```
 
 Второй запрос возвращает 500:
-`{"error":"LazyInitializationException","message":"could not initialize proxy [messages.model.Author#5] - no Session"}`.
+`{"error":"LazyInitializationException","message":"Could not initialize proxy [messages.model.Author#5] - no session"}`.
 
 Чтобы видеть все SQL-запросы в консоли: `./gradlew bootRun --args='--spring.profiles.active=sql'`.
 
@@ -75,7 +76,7 @@ curl http://localhost:8080/api/messages/5/fail
 
 Точка останова - `MessageService.getMessagesOptimized()`, строка 74
 (`messageRepository.findAllWithAuthor()`). Можно поставить ещё одну в
-`MessageController.optimized()`, строка 47, чтобы начать с контроллера.
+`MessageController.optimized()`, строка 46, чтобы начать с контроллера.
 
 `curl http://localhost:8080/api/messages/optimized`, дальше:
 
@@ -84,8 +85,10 @@ curl http://localhost:8080/api/messages/5/fail
   Чтобы не ходить по коду Spring, удобнее Smart Step Into (Shift + F7) или добавить
   `org.springframework.*` в Settings → Build, Execution, Deployment → Debugger → Stepping →
   "Do not step into the classes";
-- в сервисе на строке 74 F7 ведёт в `MessageRepository.findAllWithAuthor()` - это интерфейс,
-  его реализацию Spring Data создаёт сам (`$Proxy...` → `SimpleJpaRepository` / выполнение `@Query`);
+- в сервисе на строке 74 F7 ведёт не в `MessageRepository` (это интерфейс, кода там нет), а в
+  `JdkDynamicAopProxy.invoke` - прокси, который Spring Data создаёт для репозитория. Дальше по цепочке
+  интерцепторов (транзакция, `QueryExecutorMethodInterceptor`) вызов доходит до выполнения JPQL из
+  `@Query`; методы вроде `findAll()` и `findById()` попадают в `SimpleJpaRepository`;
 - F8 (Step Over) по строкам 75-78 - цикл, где из каждого `Message` собирается `MessageDto`.
 
 ### Variables и Watches: почему N+1
@@ -96,7 +99,7 @@ curl http://localhost:8080/api/messages/5/fail
 В Variables у `message`:
 
 - `id`, `text`, `createdAt` - уже заполнены, они пришли первым запросом `select ... from messages`;
-- `author` - объект класса `Author$HibernateProxy$...`, внутри `$$_hibernate_interceptor`
+- `author` - объект класса `Author$HibernateProxy`, внутри `$$_hibernate_interceptor`
   с `initialized = false`, а поля `id`/`username` самого прокси пустые. Известен только id автора
   (он лежит в `author_id` у сообщения).
 
@@ -131,7 +134,7 @@ message.getId() == 5
 1. Точка останова в `MessageService.getMessageToFail`, строка 95. `curl http://localhost:8080/api/messages/5/fail`.
 2. F8 - строка 97, `message` уже получено. Alt + F8 (Option + F8 на Mac), выражение
    `message.getAuthor().getUsername()` → Evaluate. Результат - исключение
-   `org.hibernate.LazyInitializationException: could not initialize proxy [messages.model.Author#5] - no Session`.
+   `org.hibernate.LazyInitializationException: Could not initialize proxy [messages.model.Author#5] - no session`.
 3. Для сравнения: точка останова внутри `SimpleJpaRepository.findById` (или F7 со строки 95),
    то же выражение там вычисляется нормально - транзакция и сессия ещё открыты.
    Ещё вариант - точка на строке 64 в `getMessagesNPlusOne()`: метод под `@Transactional`,
